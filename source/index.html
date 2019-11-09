@@ -1,12 +1,357 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header page-header__opened">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/147x40" alt="Логотип Pink">
+    </a>
+    <nav class="main-nav main-nav--opened" aria-label="Основное меню">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
+        <span></span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="download-app">
+      <span class="download-app__title">Взгляните на жизнь иначе!</span>
+      <div class="download-app__content">
+        <h1 class="visually-hidden">Pink - приложение для фотографов</h1>
+        <section class="downloads">
+          <div class="downloads__inner">
+            <h2 class="downloads__title">Взгляните на жизнь иначе!</h2>
+            <a class="downloads__download-btn btn" href="https://apps.apple.com/ru/genre/ios/id36"
+              target="_blank">Скачать приложение</a>
+            <div class="downloads__platforms">
+              <a class="downloads__platform downloads__platform--apple" href="https://apps.apple.com/ru/genre/ios/id36"
+                target="_blank" title="Скачать для iPhone и iPad">Apple</a>
+              <a class="downloads__platform downloads__platform--android" href="https://play.google.com" target="_blank"
+                title="Скачать для Android">Android</a>
+              <a class="downloads__platform downloads__platform--windows" href="https://microsoft.com/store/"
+                target="_blank" title="Скачать для Windows">Windows</a>
+            </div>
+            <div class="downloads__description">
+              <p>Доступно для iPhone, iPad, Android, Windows Phone, Os X, Windows 8</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__title-wrapper">
+        <h2 class="advantages__title">
+          Устали от серости мегаполиса?
+          <span class="advanatges__subtitle">
+            Нам есть, что вам предложить!
+          </span>
+        </h2>
+      </div>
+      <div class="advantages__wrapper">
+        <div class="advantages__inner">
+          <ul class="advantages__list">
+            <liq class="advantages__item advantages__item--mood">
+              <h3 class="advantages__name">Поднимает настроение</h3>
+              <p class="advantages__text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+              </liworld>
+              <li class="advantages__item advantages__item--world">
+                <h3 class="advantages__name">Меняет мир вокруг</h3>
+                <p class="advantages__text">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--friends">
+                <h3 class="advantages__name">Заводит новых друзей</h3>
+                <p class="advantages__text">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="research">
+      <div class="research__container">
+        <div class="research__item">
+          <h3 class="research__title">
+            Эффект на 24 часа!
+          </h3>
+          <p>
+            Британские ученые провели исследования и доказал, что положительный эффект от использования приложения
+            длится целые сутки!
+          </p>
+          <a class="research__link" href="#"></a>
+        </div>
+      </div>
+    </section>
+    <section class="review-slider">
+      <input type="radio" name="toggle-1" id="btn-1" checked>
+      <input type="radio" name="toggle-1" id="btn-2">
+      <input type="radio" name="toggle-1" id="btn-3">
+      <div class="review-slider__slides-container">
+        <div class="review-slider__slides">
+          <blockquote review-slider__item>
+            <h3 class="review-slider__title">
+              Николай Петров
+            </h3>
+            <p class="review-slider__text">
+              <span class="review-slider__quotes">«</span>
+              Это приложение перевернуло мой мир и позволило по новому взглянуть привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной Фотографии!
+              <span class="review-slider__quotes">»</span>
+            </p>
+            <div class="review-slider__author">
+              <h3 class="review-slider__author-title">Николай Петров</h3>
+              <span>25 лет, водитель трамвая</span>
+            </div>
+          </blockquote>
+          <blockquote review-slider__item>
+            <h3 class="review-slider__title">
+              Николай Петров
+            </h3>
+            <p class="review-slider__text">
+              <span class="review-slider__quotes">«</span>
+              Это приложение перевернуло мой мир и позволило по новому взглянуть привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной Фотографии!
+              <span class="review-slider__quotes">»</span>
+            </p>
+            <div class="review-slider__author">
+              <h3 class="review-slider__author-title">Николай Петров</h3>
+              <span>25 лет, водитель трамвая</span>
+            </div>
+          </blockquote>
+          <blockquote review-slider__item>
+            <h3 class="review-slider__title">
+              Николай Петров
+            </h3>
+            <p class="review-slider__text">
+              <span class="review-slider__quotes">«</span>
+              Это приложение перевернуло мой мир и позволило по новому взглянуть привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной Фотографии!
+              <span class="review-slider__quotes">»</span>
+            </p>
+            <div class="review-slider__author">
+              <h3 class="review-slider__author-title">Николай Петров</h3>
+              <span>25 лет, водитель трамвая</span>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      <div class="review-slider__controls slider__controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+    </section>
+    <section class="price-slider">
+      <input class="price-slider__input" type="radio" name="toggle-2" id="btn-4">
+      <input class="price-slider__input" type="radio" name="toggle-2" id="btn-5">
+      <input class="price-slider__input" type="radio" name="toggle-2" id="btn-6">
+      <div class="price-slider__slides-container">
+        <div class="price-slider__slides">
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <th class="price-table__hidden-cell"></th>
+                <th class="price-table__title">
+                  База
+                  <br>
+                  <span class="price-table__price">1,99 USD</span>
+                </th>
+                <th class="price-table__title price-table__title--hit-logo">
+                  Стандарт
+                  <br>
+                  <span class="priice-table__price">3,99 USD</span>
+                </th>
+                <th class="price-table__title">
+                  Анлим
+                  <br>
+                  <span class="price-table__price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="price-table__hidden-cell">
+                  Розовый фильтр
+                </td>
+                <td>
+                  <span class="price-table__hidden-text">
+                    Розовый фильтр
+                  </span>
+                  <div class="price-table__check-icon--yes">
+                    есть
+                  </div>
+                </td>
+                <td>
+                  <span class="price-table__hidden-text">
+                    Розовый фильтр
+                  </span>
+                  <div class="price-table__check-icon--yes">
+                    есть
+                  </div>
+                </td>
+                <td>
+                  <span class="price-table__hidden-text">
+                    Розовый фильтр
+                  </span>
+                  <div class="price-table__check-icon--yes">
+                    есть
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="price-table__hidden-cell">Смайлики</td>
+                <td>
+                  <span class="price-table__hidden-text">Смайлики</span>
+                  <div class="price-table__check-icon--no">
+                    нет
+                  </div>
+                </td>
+                <td>
+                  <span class="price-table__hidden-text">Смайлики</span>
+                  <div class="price-table__check-icon--yes">
+                    есть
+                  </div>
+                </td>
+                <td>
+                    <span class="price-table__hidden-text">Смайлики</span>
+                    <div class="price-table__check-icon--yes">
+                      есть
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <td class="price-table__hidden-cell">
+                  Комментарии
+                </td>
+                <td>
+                  <span class="price-table__hidden-text">
+                    Комментарии
+                  </span>
+                  <div class="price-table__check-icon--no">
+                    нет
+                  </div>
+                </td>
+                <td>
+                    <span class="price-table__hidden-text">
+                      Комментарии
+                    </span>
+                    <div class="price-table__check-icon--no">
+                      нет
+                    </div>
+                  </td>
+                  <td>
+                    <span class="price-table__hidden-text">
+                      Комментарии
+                    </span>
+                    <div class="price-table__check-icon--yes">
+                      есть
+                    </div>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="price-slider__controls slider-controls">
+        <label for="btn-4"></label>
+        <label for="btn-5"></label>
+        <label for="btn-6"></label>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__title-wrapper">
+        <h2 class="contacts__title">
+          Остались вопросы?
+          <span class="contacts__subtitle">
+            Свяжитесь с нами!
+          </span>
+        </h2>
+        </div>
+        <div class="contacts__inner">
+          <div class="contacts__items">
+            <div class="contacts__item contacts__item--phone">
+              <h3 class="contacts__item-title">
+                Звоните:
+              </h3>
+              <a class="contacts__item-info contacts__item-info--phone" href="tel:+78125556666">+7(812)555-66-66</a>
+            </div>
+            <div class="contacts__item contacts__item--email">
+              <h3 class="contacts__item-title">
+                Пишите:
+              </h3>
+              <a class="contacts__item-info contacts__item-info--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item contacts__item--adress">
+              <h3 class="contacts__item-title">
+                Приезжайте в гости:
+              </h3>
+              <address class="contacts__item-info contacts__item-info--adress">
+                ул. Большая Конюшенная, 19/8
+              </address>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-map">
+          <div class="contacts-map__inner">
+            <div class="contacts-map__content" id="ya-maps">
+              <!-- карта яндекса -->
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+  </main>
+  <footer class="page-footer page-footer--index-page">
+    <div class="page-footer__container">
+      <a class="page-footer__logo" href="#">
+        <!-- <picture>
+
+        </picture> -->
+      </a>
+      <ul class="social-links">
+        <li>
+          <a  class="social-links__icon social-links__icon--twitter" href="#twitter" title="twitter">twitter</a>
+        </li>
+        <li>
+          <a class="social-links__icon social-links__icon--facebook" href="#facebook" title="facebook">facebook</a>
+        </li>
+        <li>
+          <a class="social-list__icon social-list__icon--youtube" href="#youtube">youtube</a>
+        </li>
+      </ul>
+      <a class="developer" href="https://htmlacademy.ru/" target="_blank">
+        <span class="developer__text">Разработано</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#d22856">
+          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
