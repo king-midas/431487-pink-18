@@ -1,0 +1,38 @@
+//device width & dpi
+
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// font weights
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+// fonts family scheme
+
+$open-sans: "Open-sans", "Arial", sans-serif;
+
+// font colors scheme
+
+$body__font-family: $open-sans;
+$site-list__link-font: $open-sans;
+
+// font sizes scheme
+$body__font-size: 18px;
+
+// colors
+$white-color: #ffffff;
+$ebony-clay-color: #283645;
+
+
+// color scheme
+
+// page-header colors
+$page-header--full__backg-color: $ebony-clay-color;
+$page-header__text-color:$white-color;
+$site-list__link-color: $white-color;
+

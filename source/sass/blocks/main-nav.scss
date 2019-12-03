@@ -1,0 +1,45 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.main-nav__icon-cross,
+.main-nav__icon-burger {
+  display: none;
+}
+
+.main-nav--opened .main-nav__icon-cross {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -1px;
+  left: 26px;
+}
+
+.main-nav--closed .main-nav__icon-burger {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav__toggle:hover .main-nav__icon-cross {
+  fill: #d22856;
+}
+
+
+

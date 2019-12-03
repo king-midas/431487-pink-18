@@ -1,0 +1,36 @@
+.page-header {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: $page-header__text-color;
+  width: 100%;
+
+  display: block;
+  z-index: 2;
+}
+
+.page-header--full {
+  position: relative;
+  background-color: $page-header--full__backg-color;
+}
+
+.page-header__wrapper {
+  width: 100%;
+
+}
+
+.page-header__logo-link {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+

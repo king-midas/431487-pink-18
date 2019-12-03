@@ -1,0 +1,22 @@
+.contacts-map {
+  max-height: 290px;
+  overflow: hidden;
+}
+
+.contacts-map__inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+}
+
+.contacts-map__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 41px;
+  z-index: 3;
+  background: url("/source/img/bg-triangle-white-footer.svg") no-repeat center -180px;
+}
