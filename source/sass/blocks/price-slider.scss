@@ -2,8 +2,8 @@
   position: relative;
   padding: 0;
   padding-top: 100px;
-  padding-bottom: 60px;
-  background: #f2f2f2 url(../img/bg-triangle-white-3.svg) no-repeat center -30px;
+  padding-bottom: 51px;
+  background: #f2f2f2 url(../img/bg-triangle-white-3.svg) no-repeat center -46px;
 }
 
 .price-table {
@@ -13,11 +13,11 @@
 .price-slider__slides-container {
   overflow: hidden;
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 24px;
+  margin-bottom: 42px;
   padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 21px;
+  padding-left: 21px;
 }
 
 .price-table__hidden-cell {
@@ -58,7 +58,20 @@
 .price-table th {
   box-sizing: border-box;
   min-width: 277px;
-  padding: 13px;
+}
+
+.price-table th {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.price-table td {
+  padding-top: 13px;
+  padding-bottom: 10px;
+  padding-right: 13px;
+  padding-left: 21px;
 }
 
 .price-slider__slides {
@@ -86,8 +99,8 @@
 .price-table__title--hit-logo::after {
   content: 'ХИТ';
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 7px;
   transform: rotate(-45deg);
   font-size: 14px;
   font-weight: 700;
@@ -179,13 +192,16 @@
 @media (max-width: 659px) {
   .price-slider #btn-4:checked~.price-slider__slides-container .price-slider__slides {
     transform: translate(0);
+    transition: transform .8s ease;
   }
 
   .price-slider #btn-5:checked~.price-slider__slides-container .price-slider__slides {
     transform: translate(-33.3%);
+    transition: transform .8s ease;
   }
 
   .price-slider #btn-6:checked~.price-slider__slides-container .price-slider__slides {
     transform: translate(-66.6%);
+    transition: transform .8s ease;
   }
 }
