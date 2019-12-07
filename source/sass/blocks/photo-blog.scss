@@ -1,0 +1,46 @@
+.photo-blog__title {
+  font-family: $open-sans;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #283645;
+}
+
+.photo-blog__post-content {
+  font-family: $open-sans;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: #283645;
+  background-color: #f2f2f2;
+}
+
+.photo-blog__post-author {
+  font-family: $open-sans;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 24px;
+  color: #283645;
+}
+
+.photo-blog__post-time {
+  font-family: $open-sans;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #283645;
+}
+
+.photo-blog__post-likes {
+  font-family: $open-sans;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 24px;
+  color: #d22856;
+}
+

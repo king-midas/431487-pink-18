@@ -19,12 +19,6 @@
   flex-direction: column;
 }
 
-// .reviews__item:not(:first-child) {
-//   position: absolute;
-//   top: 0;
-//   left: 300px;
-// }
-
 .reviews__item {
   position: absolute;
   top: 0;
@@ -91,6 +85,12 @@
   border-radius: 50%;
   border: none;
   background-color: #bec2c7;
+  &:hover {
+    background-color: #283645;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .reviews-slider__controls {
@@ -141,7 +141,3 @@
   display: flex;
   overflow: hidden;
 }
-
-
-
-
