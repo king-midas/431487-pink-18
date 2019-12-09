@@ -1,5 +1,5 @@
 .reviews {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .reviews__inner {
@@ -7,19 +7,21 @@
   padding-right: 20px;
   padding-left: 20px;
   position: relative;
+  transition: transform 0.8s ease;
 }
 
-.reviews__list  {
+.reviews__list {
   position: relative;
+  width: 280px;
+  height: 236px;
+  display: flex;
+  overflow: hidden;
 }
 
 .reviews__item {
   margin: 0;
   display: flex;
   flex-direction: column;
-}
-
-.reviews__item {
   position: absolute;
   top: 0;
   left: 300px;
@@ -69,15 +71,15 @@
   display: none;
 }
 
-.reviews__inner #btn-1:checked~.reviews-slider__controls label[for=btn-1],
-.reviews__inner #btn-2:checked~.reviews-slider__controls label[for=btn-2],
-.reviews__inner #btn-3:checked~.reviews-slider__controls label[for=btn-3] {
+.reviews__input-1:checked ~ .reviews__slider-controls > .reviews__slider-label-1,
+.reviews__input-2:checked ~ .reviews__slider-controls > .reviews__slider-label-2,
+.reviews__input-3:checked ~ .reviews__slider-controls > .reviews__slider-label-3 {
   box-shadow: 0 0 0 3px #283645;
   overflow: visible;
   background-color: transparent;
 }
 
-.reviews-slider__controls label {
+.reviews__slider-controls label {
   width: 6px;
   height: 6px;
   margin: 0 10px;
@@ -85,15 +87,17 @@
   border-radius: 50%;
   border: none;
   background-color: #bec2c7;
+
   &:hover {
     background-color: #283645;
   }
+
   &:active {
     opacity: 0.1;
   }
 }
 
-.reviews-slider__controls {
+.reviews__slider-controls {
   margin-top: 36px;
   margin-bottom: 10px;
   display: flex;
@@ -111,15 +115,14 @@
 
 .reviews__input-1:checked ~ .reviews__list .reviews__item--1 {
   transform: translate(-300px);
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   position: relative;
   display: block;
-
 }
 
 .reviews__input-2:checked ~ .reviews__list .reviews__item--2 {
   transform: translate(-300px);
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   display: block;
   position: relative;
 }
@@ -127,17 +130,6 @@
 .reviews__input-3:checked ~ .reviews__list .reviews__item--3 {
   transform: translate(-300px);
   position: relative;
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   display: block;
-}
-
-.reviews__inner {
-  transition: transform .8s ease;
-}
-
-.reviews__list {
-  width: 280px;
-  height: 236px;
-  display: flex;
-  overflow: hidden;
 }

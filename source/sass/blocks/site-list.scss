@@ -6,7 +6,6 @@
 
 .site-list__item {
   text-align: center;
-
 }
 
 .site-list__link {
@@ -25,16 +24,17 @@
   padding-bottom: 16px;
   padding-left: 20px;
   padding-right: 20px;
-  box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255,255,255,.15);
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
   &:hover {
     color: #d22856;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .site-list__link:last-child {
-  box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255,255,255,.15), inset 0 -1px 0 #000;
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000000;
 }
-
