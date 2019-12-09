@@ -1,0 +1,22 @@
+.name-fieldset {
+  border: 0;
+}
+
+.name-fieldset__field-name {
+  font-family: $open-sans;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: left;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.name-fieldset__text-input {
+  font-family: $open-sans;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
+}

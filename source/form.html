@@ -3,34 +3,46 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="page-header page-header__opened">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/147x40" alt="Логотип Pink">
-    </a>
-    <nav class="main-nav main-nav--opened" aria-label="Основное меню">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
-        <span></span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header page-header--full">
+
+    <div class="page-header__wrapper">
+      <a class="page-header__logo-link">
+        <picture class="image-image">
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+          </picture>
+      </a>
+      <nav class="main-nav main-nav--opened" aria-label="Основное меню">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path class="main-nav__icon-cross" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+          <img class="main-nav__icon-burger" src="img/icon-menu-burger.svg" width="50" height="">
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="page-title">
@@ -38,8 +50,8 @@
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
     </div>
-    <form action="https://echo.htmlacademy.ru" method="POST">
-      <div class="review-foorm__title">
+    <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="review-form__title">
         <p>
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
           <span class="review-form__hidden-text">
@@ -53,7 +65,7 @@
             Фамилия:
           </span>
           <span class="name-fieldset__input-wrapper">
-            <input class="name-fieldset__text-input" type="text" name="user-surname" placeholder="Укажите фамилию"
+            <input class="name-fieldset__text-input" type="text" name="user-surname" placeholder="Укажите фамилию *"
             pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
           </span>
         </label>
@@ -62,7 +74,7 @@
             Имя:
           </span>
           <span class="name-fieldset__input-wrapper">
-            <input class="name-fieldset__text-input" type="text" name="user-name" placeholder="Введите ваше имя" pattern="[А-Яа-яЁё \s]+$"
+            <input class="name-fieldset__text-input" type="text" name="user-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё \s]+$"
             data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
           </span>
         </label>
@@ -71,7 +83,7 @@
             Отчество:
           </span>
           <span class="name-fieldset__input-wrapper">
-            <input class="name-fieldset__text-input" type="text" name="user-patronym" placeholder="Введите ваше отчество" pattern="[А-Яа-яЁё \s]+$"
+            <input class="name-fieldset__text-input" type="text" name="user-patronym" placeholder="Hу и отчество тоже" pattern="[А-Яа-яЁё \s]+$"
             data-error="Ошибка, перепроверьте отчество" title="Только русские буквы" required>
           </span>
         </label>
@@ -153,7 +165,7 @@
               Номер телефона
             </span>
             <span class="contacts-fieldset__input-wrapper contacts-fieldset__input-wrapper--phone-icon">
-              <input class="text-field__input" type="text" id="zipCode" name="user-phone"
+              <input class="contacts-fieldset__input" type="text" id="zipCode" name="user-phone"
               pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" data-error="Ошибка, укажите номер"
               title="+7(888)888-88-88" required>
             </span>
@@ -163,8 +175,8 @@
               Адрес почты
             </span>
             <span class="contacts-fieldset__input-wrapper contacts-fieldset__input-wrapper--email-icon">
-              <input class="text-field__input" type="email" id="emailField" name="user-email"
-              pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="E-mail, пожалуйста"
+              <input class="contacts-fieldset__input" type="email" id="emailField" name="user-email"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Введите почту *"
               data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
             </span>
           </label>
@@ -192,13 +204,13 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="feview-fieldset">
+      <fieldset class="review-fieldset">
         <h2 class="review-fieldset__title">
           Опишите свои эмоции
         </h2>
         <div class="review-fieldset__input-wrapper">
-          <textarea class="review-fieldset__input text-field__input" name="user-review" placeholder="Можно прям в красках, не стесняясь в выражениях"
-          data-error="Ошибка, оставьте отзыв"  title="Только русские буквы" required>
+          <textarea class="review-fieldset__input text-field__input" name="user-review" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"
+data-error="Ошибка, оставьте отзыв"  title="Только русские буквы" required>
         </textarea>
         </div>
       </fieldset>
@@ -241,9 +253,5 @@
         </a>
       </div>
     </footer>
-
-
   </body>
-
   </html>
-

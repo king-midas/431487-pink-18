@@ -1,0 +1,34 @@
+.contacts-map {
+  max-height: 290px;
+  overflow: hidden;
+}
+
+.contacts-map__inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 23px;
+}
+
+.contacts-map__content {
+  position: relative;
+  min-height: 212px;
+  font-size: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  background: url("../img/bg-map-mobile@1-1.png") no-repeat center -430px;
+}
+
+.contacts-map__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 41px;
+  z-index: 3;
+  background: url("../img/bg-triangle-white-footer-2.svg") no-repeat center -180px;
+}

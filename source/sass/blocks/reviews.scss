@@ -1,0 +1,135 @@
+.reviews {
+  background-color: #ffffff;
+}
+
+.reviews__inner {
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  transition: transform 0.8s ease;
+}
+
+.reviews__list {
+  position: relative;
+  width: 280px;
+  height: 236px;
+  display: flex;
+  overflow: hidden;
+}
+
+.reviews__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+
+.reviews__client-name {
+  margin: 0;
+  margin-top: 13px;
+  font-family: $open-sans;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-top: 13px;
+  font-family: $open-sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
+
+.reviews__text::before {
+  content: open-quote;
+}
+
+.reviews__text::after {
+  content: close-quote;
+}
+
+.reviews__client-about {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.reviews__nav {
+  display: none;
+}
+
+.reviews__input-1:checked ~ .reviews__slider-controls > .reviews__slider-label-1,
+.reviews__input-2:checked ~ .reviews__slider-controls > .reviews__slider-label-2,
+.reviews__input-3:checked ~ .reviews__slider-controls > .reviews__slider-label-3 {
+  box-shadow: 0 0 0 3px #283645;
+  overflow: visible;
+  background-color: transparent;
+}
+
+.reviews__slider-controls label {
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: #bec2c7;
+
+  &:hover {
+    background-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reviews__slider-controls {
+  margin-top: 36px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.reviews__inner input {
+  display: none;
+}
+
+.reviews__input-1:checked ~ .reviews__list .reviews__item--1 {
+  transform: translate(-300px);
+  transition: transform 0.8s ease;
+  position: relative;
+  display: block;
+}
+
+.reviews__input-2:checked ~ .reviews__list .reviews__item--2 {
+  transform: translate(-300px);
+  transition: transform 0.8s ease;
+  display: block;
+  position: relative;
+}
+
+.reviews__input-3:checked ~ .reviews__list .reviews__item--3 {
+  transform: translate(-300px);
+  position: relative;
+  transition: transform 0.8s ease;
+  display: block;
+}

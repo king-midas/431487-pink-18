@@ -1,0 +1,33 @@
+.contacts-fieldset {
+  border: 0;
+}
+
+.contacts-fieldset__title {
+  display: none;
+}
+
+.contacts-fieldset__info {
+  font-family: $open-sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #d22856;
+}
+
+.contacts-fieldset__input {
+  font-family: $open-sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
+}
+
+.contacts-fieldset__input::-webkit-input-placeholder {
+  color: #283545;
+}
+
+.contacts-fieldset__input::-moz-placeholder {
+  color: #283545;
+}
