@@ -1,5 +1,5 @@
 .developer {
-  text-decoration: none;
+  margin-top: 32px;
 }
 
 .developer__text {
@@ -10,4 +10,20 @@
   text-align: left;
   color: #283645;
   text-decoration: none;
+  // vertical-align: top;
+  padding-top: 3px;
+}
+
+.developer__academy-logo {
+  margin-left: 0px;
+  width: 27px;
+  height: 34px;
+}
+
+.developer__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 27px;
+  height: 34px;
 }

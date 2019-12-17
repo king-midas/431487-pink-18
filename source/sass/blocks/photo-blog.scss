@@ -1,4 +1,9 @@
 .photo-blog__title {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+  padding-top: 44px;
+  width: 320px;
   font-family: $open-sans;
   font-size: 14px;
   line-height: 30px;
@@ -7,7 +12,22 @@
   color: #283645;
 }
 
+.photo-blog__post {
+  max-width: 280px;
+  min-height: 300px;
+  margin: 0 auto 21px;
+}
+
+.photo-blog__post--panorama {
+  max-width: none;
+}
+
 .photo-blog__post-content {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 280px;
+  padding: 19px;
+  padding-top: 17px;
   font-family: $open-sans;
   font-size: 14px;
   line-height: 24px;
@@ -15,6 +35,10 @@
   text-align: left;
   color: #283645;
   background-color: #f2f2f2;
+}
+
+.photo-blog__post-content p {
+  margin: 0;
 }
 
 .photo-blog__post-author {
@@ -33,13 +57,86 @@
   line-height: 24px;
   text-align: left;
   color: #283645;
+  text-transform: uppercase;
 }
 
 .photo-blog__post-likes {
+  padding-left: 17px;
   font-family: $open-sans;
   font-size: 12px;
   font-weight: normal;
   text-align: left;
   line-height: 24px;
   color: #d22856;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
+
+.photo-blog__picture-link--panorama {
+  position: relative;
+}
+
+.photo-blog__picture-link {
+  width: 320px;
+}
+
+.photo-blog__picture-link--panorama::before {
+  position: absolute;
+    top: 0;
+    left: 162px;
+    content: 'панорама дня';
+    width: 140px;
+    height: 36px;
+    font-family: "Open-sans", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #d22856;
+    text-align: center;
+    z-index: 1;
+}
+
+.photo-blog__heart-icon {
+  width: 13px;
+  height: 12px;
+  border: 0;
+  padding: 0;
+  font-size: 0;
+  background: url("../img/icon-heart.svg") no-repeat;
+  cursor: pointer;
+}
+
+.photo-blog__action {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.photo-blog__picture-link,
+.photo-blog__picture-link img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+.photo-blog__post-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+// input[type=range]::-webkit-slider-runnable-track {
+//   width: 300px;
+//   height: 5px;
+//   background: #ddd;
+//   border: none;
+//   border-radius: 3px;
+// }

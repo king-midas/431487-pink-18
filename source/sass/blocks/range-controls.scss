@@ -1,4 +1,26 @@
 .range-controls {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 27px;
+  padding-left: 36px;
+  padding-right: 42px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.range-controls__filter-input {
+  -webkit-appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: black;
+}
+
+.range-controls__filter-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 15px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
 }
