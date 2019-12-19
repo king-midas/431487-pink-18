@@ -5,9 +5,45 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+  padding-top: 46px;
 }
 
 .review-form__title p {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.review-form__hidden-text {
+  display: none;
+}
+
+.review-form__send-button {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 46px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.review-form__purpose-text {
+  display: none;
+}
+
+.review-form__note {
+  margin-top: 36px;
+  font-family: $open-sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.review-form__note-symbol {
+  color: #d22856;
 }

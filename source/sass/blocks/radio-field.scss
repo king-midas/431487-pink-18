@@ -1,7 +1,30 @@
+.radio-field {
+  display: flex;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
 .radio-field__input-text {
+  display: block;
+  align-self: center;
+  padding-left: 30px;
   font-family: $open-sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+}
+
+.radio-field__checkbox {
+  display: block;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.radio-field__input:checked ~ .radio-field__checkbox {
+  background-color: red;
+  background: url("../img/icon-map-marker.svg");
 }

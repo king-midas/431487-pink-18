@@ -1,9 +1,18 @@
 .achievements-fieldset {
   background-color: #f2f2f2;
   border: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
 }
 
 .achievements-fieldset__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 16px;
   font-family: $open-sans;
   font-size: 14px;
   font-weight: normal;
@@ -11,4 +20,15 @@
   text-align: center;
   color: #d22856;
   text-transform: uppercase;
+}
+
+.achievements-fieldset__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements-fieldset__column-wrapper {
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

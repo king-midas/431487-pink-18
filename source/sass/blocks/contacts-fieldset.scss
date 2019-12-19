@@ -1,4 +1,10 @@
 .contacts-fieldset {
+  margin: 0 auto;
+  margin-bottom: 26px;
+  padding: 0;
+  padding-top: 31px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 0;
 }
 
@@ -7,15 +13,27 @@
 }
 
 .contacts-fieldset__info {
+  padding-left: 23px;
   font-family: $open-sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
   color: #d22856;
+  text-transform: uppercase;
 }
 
 .contacts-fieldset__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
   font-family: $open-sans;
   font-size: 18px;
   font-weight: 400;
@@ -30,4 +48,21 @@
 
 .contacts-fieldset__input::-moz-placeholder {
   color: #283545;
+}
+
+.contacts-fieldset__input:-moz-placeholder {
+  color: #283545;
+}
+
+.contacts-fieldset__input:-ms-input-placeholder {
+  color: #283545;
+}
+
+.contacts-fieldset__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-fieldset__item {
+  margin-bottom: 17px;
 }

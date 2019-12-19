@@ -1,4 +1,16 @@
+.review-fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 0;
+}
+
 .review-fieldset__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
   font-family: $open-sans;
   font-size: 14px;
   font-weight: 400;
@@ -8,7 +20,20 @@
   color: #d22856;
 }
 
-.review-fieldset__input::-webkit-input-placeholder {
-  color: red;
-  background-color: red;
+.review-fieldset__input {
+  padding-top: 14px;
+  padding-bottom: 3px;
+  padding-left: 19px;
+  padding-right: 19px;
+  font-family: $open-sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  border: 0;
+  border: 2px solid #e5e5e5;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  color: #283645;
 }
