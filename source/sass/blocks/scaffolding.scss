@@ -35,3 +35,71 @@ body {
   cursor: pointer;
   white-space: nowrap;
 }
+
+
+// placeholder input email colors
+
+input[type="email"]::-webkit-input-placeholder {
+  color: #283645;
+  opacity: 1;
+}
+
+input[type="email"]:-moz-placeholder { /* Firefox 18- */
+  color: #283645;
+  opacity: 1;
+}
+
+input[type="email"]::-moz-placeholder {  /* Firefox 19+ */
+  color: #283645;
+  opacity: 1;
+}
+
+input[type="email"]:-ms-input-placeholder {
+  color: #283645;
+  opacity: 1;
+}
+
+// placeholder input text colors
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #283645;
+  opacity: 1;
+}
+
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: #283645;
+  opacity: 1;
+}
+
+input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+  color: #283645;
+  opacity: 1;
+}
+
+input[type="text"]:-ms-input-placeholder {
+  color: #283645;
+  opacity: 1;
+}
+
+// placeholder textarea colors
+
+
+textarea::-webkit-input-placeholder {
+  color: #283645;
+  opacity: 1;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #283645;
+  opacity: 1;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #283645;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  color: #283645;
+  opacity: 1;
+}

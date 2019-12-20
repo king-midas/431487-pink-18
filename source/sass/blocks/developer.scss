@@ -26,4 +26,13 @@
   margin-left: 10px;
   width: 27px;
   height: 34px;
+
+  &:hover path {
+    fill: #283645;
+  }
+
+  &:active path {
+    fill: #283645;
+    opacity: 0.3;
+  }
 }

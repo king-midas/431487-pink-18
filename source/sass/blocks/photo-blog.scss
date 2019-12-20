@@ -110,6 +110,11 @@
   font-size: 0;
   background: url("../img/icon-heart.svg") no-repeat;
   cursor: pointer;
+  fill: #d22856;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .photo-blog__action {
@@ -126,11 +131,19 @@
   object-fit: cover;
 }
 
+.photo-blog__picture-link--big {
+  background-color: #f2f2f2;
+}
+
 
 .photo-blog__post-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+
+.photo-blog__post--big-picture {
+  background-color: #ccb683;
 }
 
 // input[type=range]::-webkit-slider-runnable-track {

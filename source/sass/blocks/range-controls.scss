@@ -23,4 +23,22 @@
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+
+.range-controls__filter-input::-moz-range-thumb {
+  width: 14px;
+  height: 15px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }

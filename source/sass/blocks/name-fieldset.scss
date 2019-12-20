@@ -36,11 +36,21 @@
   color: #283645;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
-
 }
+
 
 .name-fieldset__item {
   display: flex;
   flex-direction: column;
   margin-bottom: 17px;
+}
+
+.name-fieldset__input-wrapper {
+  &:hover .name-fieldset__text-input {
+    border: 2px solid #283645;
+  }
+
+  &:active .name-fieldset__text-input {
+    border: 2px solid #d22856;
+  }
 }
