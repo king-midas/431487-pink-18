@@ -198,7 +198,7 @@
   }
 
   .price-slider__input-2:checked ~ .price-slider__slides-container .price-slider__slides {
-    transform: translate(-33.3%);
+    transform: translate(-33%);
     transition: transform 0.8s ease;
   }
 
