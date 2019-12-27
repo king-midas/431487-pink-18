@@ -35,4 +35,16 @@
     fill: #283645;
     opacity: 0.3;
   }
+
+}
+
+@media (min-width: $tablet-width) {
+  .developer {
+    margin-top: 14px;
+    margin-left: 28px;
+  }
+
+  .developer__text {
+    padding-top: 59px;
+  }
 }

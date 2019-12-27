@@ -12,6 +12,7 @@
 }
 
 .downloads__download-btn {
+  font-size: 18px;
   border: 3px solid #ffffff;
   border-radius: 30px;
   color: #ffffff;
@@ -63,4 +64,23 @@
   font-weight: 300;
   margin-top: 22px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .downloads__description {
+    font-size: 18px;
+    margin-top: 37px;
+  }
+
+  .downloads {
+    background-color: transparent;
+  }
+
+  .downloads__inner {
+    padding-left: 0;
+  }
+
+  .downloads__platforms {
+    padding-top: 14px;
+  }
 }

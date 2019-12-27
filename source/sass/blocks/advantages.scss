@@ -94,3 +94,71 @@
   background-repeat: no-repeat;
   background-position: center top;
 }
+
+@media (min-width: $tablet-width) {
+
+  .advantages {
+    padding-top: 45px;
+  }
+
+  .advantages__title {
+    font-size: 40px;
+  }
+
+  .advanatges__subtitle {
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 45px;
+  }
+
+  .advantages__name {
+    text-align: left;
+  }
+
+  .advantages__text {
+    text-align: left;
+  }
+
+  .advantages__item {
+    padding-left: 50%;
+    text-align: left;
+    margin-bottom: 33px;
+    max-width: 317px;
+  }
+
+  .advantages__item::before {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    width: 268px;
+    height: 481px;
+  }
+
+  .advantages__item--friends::before {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  .advantages__item:last-child::after {
+    display: none;
+  }
+
+  .advantages__wrapper {
+    padding-top: 122px;
+  }
+
+  .advantages__wrapper::before {
+    background-size: 300% 150px;
+  }
+
+  .advantages__list {
+    margin-top: 2px;
+  }
+
+  .advantages__inner {
+    padding-bottom: 10px;
+  }
+
+}

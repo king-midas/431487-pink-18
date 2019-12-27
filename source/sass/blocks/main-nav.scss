@@ -42,3 +42,9 @@
 .main-nav__toggle:active .main-nav__icon-cross {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 44px;
+  }
+}

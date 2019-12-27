@@ -61,3 +61,12 @@
   width: 15px;
   height: 14px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .social-links {
+    margin: 0;
+    padding-right: 56px;
+    padding-left: 68px;
+  }
+}

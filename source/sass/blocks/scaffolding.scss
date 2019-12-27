@@ -103,3 +103,10 @@ textarea:-ms-input-placeholder {
   color: #283645;
   opacity: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .btn {
+    padding-right: 45px;
+    padding-left: 45px;;
+  }
+}

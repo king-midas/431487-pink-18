@@ -58,14 +58,7 @@
 }
 
 .reviews__client-about {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+  display: none;
 }
 
 .reviews__nav {
@@ -118,19 +111,183 @@
   transform: translate(-300px);
   transition: transform 0.8s ease;
   position: relative;
-  display: block;
+
+}
+
+.reviews__input-1:checked ~ .reviews__list .reviews__item--2 {
+  transform: translate(318px);
+  transition: transform 0.8s ease;
+  position: absolute;
+
+
+}
+
+.reviews__input-1:checked ~ .reviews__list .reviews__item--3 {
+  transform: translate(320px);
+  transition: transform 0.8s ease;
+  position: absolute;
+
 }
 
 .reviews__input-2:checked ~ .reviews__list .reviews__item--2 {
   transform: translate(-300px);
   transition: transform 0.8s ease;
-  display: block;
   position: relative;
+
+}
+
+.reviews__input-2:checked ~ .reviews__list .reviews__item--1 {
+  transform: translate(-620px);
+  transition: transform 0.8s ease;
+  position: absolute;
+
+}
+
+.reviews__input-2:checked ~ .reviews__list .reviews__item--3 {
+  transform: translate(318px);
+  transition: transform 0.8s ease;
+  position: absolute;
+
 }
 
 .reviews__input-3:checked ~ .reviews__list .reviews__item--3 {
   transform: translate(-300px);
   position: relative;
   transition: transform 0.8s ease;
-  display: block;
+
+}
+
+.reviews__input-3:checked ~ .reviews__list .reviews__item--2 {
+  transform: translate(-620px);
+  transition: transform 0.8s ease;
+  position: absolute;
+
+}
+
+.reviews__input-3:checked ~ .reviews__list .reviews__item--1 {
+  transform: translate(-620px);
+  transition: transform 0.8s ease;
+  position: absolute;
+
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__client-about {
+    display: block;
+    font-family:  $open-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #283645;
+  }
+
+  .reviews__client-name {
+    margin-top: 34px;
+    font-family: $open-sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .reviews__client-about {
+    margin-top: 3px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    margin-top: 99px;
+  }
+
+  .reviews__item {
+    display: flex;
+  }
+
+  .reviews__list {
+    width: 620px;
+    height: 285px;
+  }
+
+  .reviews__client {
+    order: 2;
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--1 {
+    transform: translate(-300px);
+    transition: transform 0.8s ease;
+    position: relative;
+    min-width: 620px;
+
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(320px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(320px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+
+
+  }
+
+  .reviews__input-2:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(-300px);
+    transition: transform 0.8s ease;
+    position: relative;
+    min-width: 620px;
+
+  }
+
+  .reviews__input-2:checked ~ .reviews__list .reviews__item--1 {
+    transform: translate(-940px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+
+  }
+
+  .reviews__input-2:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(320px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+
+  }
+
+  .reviews__input-3:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(-300px);
+    position: relative;
+    transition: transform 0.8s ease;
+    min-width: 620px;
+
+  }
+
+  .reviews__input-3:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(-940px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+
+
+  }
+
+  .reviews__input-3:checked ~ .reviews__list .reviews__item--1 {
+    transform: translate(-940px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+  }
+
+  .reviews__slider-controls {
+    margin-top: 38px;
+  }
 }
