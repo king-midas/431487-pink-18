@@ -38,3 +38,9 @@
   align-self: center;
   padding-left: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox-field__input-text {
+    padding-left: 20px;
+  }
+}

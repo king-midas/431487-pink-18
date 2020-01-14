@@ -45,12 +45,38 @@
   margin-bottom: 17px;
 }
 
-.name-fieldset__input-wrapper {
-  &:hover .name-fieldset__text-input {
+.name-fieldset__text-input {
+  &:hover {
     border: 2px solid #283645;
   }
 
-  &:active .name-fieldset__text-input {
+  &:active {
     border: 2px solid #d22856;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .name-fieldset {
+    order: 2;
+    margin-top: 33px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 19px;
+    max-width: 960px;
+  }
+
+  .name-fieldset__item {
+    flex-direction: row;
+    margin-bottom: 47px;
+  }
+
+  .name-fieldset__field-name {
+    margin-top: 23px;
+    margin-left: 0;
+    margin-right: 19px;
+  }
+
+  .name-fieldset__text-input {
+    width: 100%;;
   }
 }

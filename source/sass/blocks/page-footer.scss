@@ -36,4 +36,58 @@
   .page-footer__container {
     display: flex;
   }
+
+  .page-footer__logo-image--tablet {
+    fill: #283645;
+  }
+
+  .page-footer__pink-logo-glases--tablet {
+    fill: #d22856;
+  }
+
+  .page-footer__logo:hover .page-footer__logo-image--tablet  {
+    fill: #d22856;
+  }
+
+  .page-footer__logo:active .page-footer__logo-image--tablet {
+    opacity: 0.3;
+    fill: #283645;
+  }
+
+  .page-footer__logo-image--desktop {
+    display: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-footer {
+    padding-top: 71px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .page-footer__logo-image--desktop {
+    fill: #283645;
+  }
+
+  .page-footer__logo:hover .page-footer__logo-image--desktop  {
+    fill: #d22856;
+  }
+
+  .page-footer__logo:active .page-footer__logo-image--desktop {
+    opacity: 0.3;
+    fill: #283645;
+  }
+
+  .page-footer__logo-image--desktop {
+    display: inline-block;
+  }
+
+  .page-footer__logo-image--tablet {
+    display: none;
+  }
 }

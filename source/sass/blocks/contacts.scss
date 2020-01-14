@@ -142,3 +142,71 @@
     padding-top: 8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .contacts {
+    padding-top: 68px;
+  }
+  .contacts__title {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .contacts__subtitle {
+    display: block;
+    margin-top: 11px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .contacts__item--phone {
+    margin-right: 0;
+  }
+
+  .contacts__item--adress {
+    order: 2;
+  }
+
+  .contacts__item--email {
+    order: 3;
+  }
+
+  .contacts__item-info--adress {
+    padding-top: 27px;
+    padding-left: 2px;
+    padding-right: 4px;
+  }
+
+  .contacts__item-info--phone {
+    padding-top: 32px;
+    padding-right: 40px;
+  }
+
+  .contacts__item-info--email {
+    padding-top: 34px;
+    padding-left: 40px;
+  }
+
+  .contacts__inner {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .contacts__item--phone {
+    padding-top: 19px;
+  }
+
+  .contacts__item-title--email {
+    padding-top: 54px;
+    padding-left: 40px;
+  }
+
+  .contacts__item-title--phone {
+    padding-right: 40px;
+  }
+}

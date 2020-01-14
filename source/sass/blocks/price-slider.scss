@@ -88,10 +88,13 @@
   }
 
   .price-slider {
-    padding-top: 80px;
+    padding-top: 65px;
     padding-bottom: 27px;
-    background-position-x: -1129px;
-    background-position-y: -47px;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: top;
   }
 
   .price-slider__slides {
@@ -101,4 +104,22 @@
   .price-slider__slides-container {
     margin-top: 20px;
   }
+}
+
+@media (min-width: $desktop-width) {
+
+  .price-slider {
+    padding-bottom: 54px;
+  }
+
+  .price-slider__slides {
+    padding-top: 59px;
+  }
+
+  .price-slider__slides-container {
+    margin-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }

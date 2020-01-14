@@ -21,6 +21,9 @@
 }
 
 .price-table__price {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: $open-sans;
   font-weight: $light;
   font-size: 24px;
@@ -39,7 +42,7 @@
 .price-table th {
   padding-top: 17px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 16px;
   padding-right: 20px;
 }
 
@@ -50,10 +53,10 @@
   text-transform: uppercase;
   border: 2px solid#e5e5e5;
   background: #ffffff;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 10px;
-  padding-right: 13px;
-  padding-left: 21px;
+  padding-right: 17px;
+  padding-left: 20px;
 }
 
 .price-table__title--hit-logo {
@@ -93,6 +96,7 @@
   width: 35px;
   height: 35px;
   font-size: 0;
+  top: -3px;
 }
 
 .price-table__check-icon--no::after,
@@ -153,6 +157,7 @@
   .price-table th {
     padding-top: 10px;
     padding-bottom: 8px;
+    padding-left: 20px;
   }
 
   .price-table__title {
@@ -166,7 +171,7 @@
 
   .price-table .price-table__hidden-cell {
     display: table-cell;
-    padding-top: 7px;
+    padding-top: 5px;
     padding-right: 16px;
     padding-bottom: 7px;
     padding-left: 16px;
@@ -178,8 +183,6 @@
     width: 33px;
     height: 22px;
   }
-
-
 
   .price-table__title--hit-logo::after {
     font-size: 12px;
@@ -203,5 +206,72 @@
     right: 41px;
     bottom: 3px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .price-table__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .price-table__price {
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .price-table .price-table__hidden-cell {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 22px;
+    padding-right: 64px;
+  }
+
+  .price-table td,
+  .price-table th {
+    min-width: 235px;
+  }
+
+  .price-table th {
+    padding-top: 14px;
+    padding-bottom: 17px;
+  }
+
+  .price-table__check-icon--yes,
+  .price-table__check-icon--no {
+    right: 81px;
+    bottom: 1px;;
+  }
+
+  .price-table__title--hit-logo::before {
+    top: -27px;
+    left: -42px;
+    width: 48px;
+    height: 19px;
+  }
+
+  .price-table__title--hit-logo::after {
+    top: 15px;
+    left: 11px;
+  }
+
+  .price-table__check-icon--yes::after {
+    top: 52%;
+    width: 30px;
+    background-color: #3dc644;
+    transform: rotate(-45deg);
+  }
+
+  .price-table__check-icon--yes::before {
+    top: 71%;
+  }
 }

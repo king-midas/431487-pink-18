@@ -37,3 +37,32 @@
   box-sizing: border-box;
   color: #283645;
 }
+
+@media (min-width: $tablet-width) {
+  .review-fieldset {
+    padding-top: 15px;
+    padding-right: 58px;
+    padding-left: 58px;
+    padding-bottom: 50px;
+    order: 6;
+    border: 2px solid #e5e5e5;
+  }
+
+  .review-fieldset__title {
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+
+  .review-fieldset__input {
+    height: 194px;
+  }
+
+
+}

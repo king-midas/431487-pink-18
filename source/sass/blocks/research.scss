@@ -75,3 +75,59 @@
     padding-right: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .research {
+    padding-top: 55px;
+    background-color: #f2f2f2;
+  }
+
+  .research__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 93px;
+    max-width: 300px;
+  }
+
+  .research__text {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    max-width: 530px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .research__link {
+    padding-top: 27px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .research__item-image {
+    width: 298px;
+    height: 345px;
+    margin-left: -12px;
+    margin-right: 67px;
+  }
+
+  .research__item-image::before {
+    top: 114px;
+    font-size: 120px;
+  }
+
+  .research__container {
+    padding-bottom: 66px;
+  }
+
+  .research__item {
+    margin: 0 auto;
+    max-width: 915px;
+  }
+}

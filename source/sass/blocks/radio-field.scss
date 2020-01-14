@@ -36,3 +36,18 @@
   background-color: red;
   background: url("../img/icon-map-marker.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .radio-field__input-text {
+    font-family: $open-sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #283645;
+    padding-right: 306px;
+    padding-left: 22px;
+    white-space: nowrap;
+  }
+
+}

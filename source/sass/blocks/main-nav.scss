@@ -1,7 +1,7 @@
 .main-nav__toggle {
   position: absolute;
-  top: 18px;
-  right: 6px;
+  top: 22px;
+  right: 19px;
   width: 50px;
   height: 24px;
   padding: 0;
@@ -35,6 +35,10 @@
   display: none;
 }
 
+.main-nav__icon-cross {
+  fill: #ffffff;
+}
+
 .main-nav__toggle:hover .main-nav__icon-cross {
   fill: #d22856;
 }
@@ -45,6 +49,24 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: 44px;
+    top: 46px;
+    right: 18px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__toggle  {
+    display: none;
+  }
+
+  .main-nav {
+    margin-left: auto;
+    padding-top: 29px;
+    overflow: hidden;
   }
 }

@@ -47,3 +47,59 @@
 .review-form__note-symbol {
   color: #d22856;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .review-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .review-form__title {
+    font-family: $open-sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 92px;
+    margin: 0 auto;
+  }
+
+  .review-form__hidden-text {
+    display: block;
+  }
+
+  .review-form__send-button {
+    order: 7;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    padding-top: 66px;
+    justify-content: space-between;
+  }
+
+  .review-form__note-symbol {
+    text-align: right;
+  }
+
+  .review-form__note {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .review-form__title p {
+    max-width: 500px;
+  }
+}

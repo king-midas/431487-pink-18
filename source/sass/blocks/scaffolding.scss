@@ -110,3 +110,10 @@ textarea:-ms-input-placeholder {
     padding-left: 45px;;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .btn {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

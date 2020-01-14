@@ -115,3 +115,24 @@
   color: rgba(40, 54, 69, 0.1);
   border: 2px solid rgba(40, 54, 69, 0.1);
 }
+
+@media (min-width: $tablet-width) {
+
+  .upload-form__title {
+    font-family: $open-sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #283645;
+  }
+
+  .upload-form__button-submit,
+  .upload-form__button-reset {
+    font-weight: $open-sans;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+  }
+}

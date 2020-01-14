@@ -70,3 +70,10 @@
     padding-left: 68px;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .social-links {
+    padding-left: 228px;
+  }
+}

@@ -289,5 +289,114 @@
 
   .reviews__slider-controls {
     margin-top: 38px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__client-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .reviews__client-about {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .reviews__slider-controls {
+    display: none;
+  }
+
+  .reviews__inner {
+    padding-top: 88px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .reviews__list {
+    min-width: 690px;
+    height: auto;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(650px);
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(650px);
+  }
+
+  .reviews {
+    position: relative;
+    padding-bottom: 8px;
+  }
+
+  .reviews::before {
+    content: "";
+    position: absolute;
+    top: 71px;
+    left: 50%;
+    width: 78.672px;
+    height: 63.789px;
+    transform: translateX(-50%);
+    margin-left: 2px;
+    background: url(../img/icon-quotes.svg) no-repeat top left;
+    background-size: auto;
+    background-size: 78.672px 63.789px;
+  }
+
+  .reviews__nav {
+    display: block;
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    border: 0;
+    padding: 0;
+    height: 41px;
+    background-size: 22px 41px;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: .3;
+    outline: 0;
+  }
+
+  .reviews__nav--next {
+    top: 125px;
+    right: 0;
+    background: url(../img/icon-review-arrow-right.svg) no-repeat top left;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .reviews__nav--previous {
+    top: 125px;
+    left: 0;
+    background: url(../img/icon-review-arrow-left.svg) no-repeat top left;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }

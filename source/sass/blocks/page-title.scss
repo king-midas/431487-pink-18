@@ -19,3 +19,27 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+
+  .page-title {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    min-height: 328px;
+    padding-bottom: 82px;
+    background-position-x: -270px;
+    background-position-y: -111px;
+  }
+
+  .page-title__text {
+    margin-top: 44px;;
+    font-family: $open-sans;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+
+
+}
