@@ -14,40 +14,47 @@
 
     <div class="page-header__wrapper">
       <a class="page-header__logo-link">
-        <picture class="image-image">
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <svg class="page-header__logo-image--mobile" width="74" height="22">
+          <use xlink:href="../img/sprite.svg#logo-pink__header--mobile"></use>
+        </svg>
+        <svg class="page-header__logo-image--tablet"  width="146" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink__header--tablet"></use>
+        </svg>
+        <svg class="page-header__logo-image--desktop" width="146" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink__header--desktop"></use>
+        </svg>
+        <!-- <picture class="page-header__logo-picture">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
             alt="Логотип Pink">
-        </picture>
+        </picture> -->
       </a>
       <nav class="main-nav main-nav--opened" aria-label="Основное меню">
         <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"
-            enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-            <path class="main-nav__icon-cross" fill="#FFFFFF"
-              d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
+          <svg class="main-nav__icon-cross" width="23" height="23">
+            <use xlink:href="img/sprite.svg#main-nav__icon-cross"></use>
           </svg>
           <img class="main-nav__icon-burger" src="img/icon-menu-burger.svg" width="50" height="">
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main>
     <div class="page-title">
       <h1 class="page-title__text">
@@ -56,9 +63,8 @@
     </div>
     <div class="photo-blog">
       <h2 class="photo-blog__title">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        <br>
-        Видите, как не хватает ваших?
+        <p class="photo-blog__title-top">Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p class="photo-blog__title-bottom">Видите, как не хватает ваших?</p>
       </h2>
       <article class="photo-blog__post photo-blog__post--panorama">
         <a class="photo-blog__picture-link photo-blog__picture-link--panorama" href="panorama-big.html" target="_blank">
