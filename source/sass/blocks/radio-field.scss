@@ -51,3 +51,10 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .radio-field__input-text {
+    padding-right: 10px;
+    padding-left: 21px;
+  }
+}

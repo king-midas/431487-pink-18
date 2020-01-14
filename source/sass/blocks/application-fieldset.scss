@@ -65,3 +65,22 @@
     padding-right: 57px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .application-fieldset {
+    margin: 0;
+    padding-bottom: 0;
+    margin-top: 78px;
+    margin-left: 70px;
+    margin-bottom: 41px;
+  }
+
+  .application-fieldset__input-wrapper {
+    padding-left: 74px;
+    padding-right: 150px;
+  }
+
+  .application-fieldset__title {
+    padding-bottom: 25px;
+  }
+}

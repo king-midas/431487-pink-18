@@ -103,3 +103,36 @@
     max-width: 500px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review-form__title p {
+    max-width: 758px;
+  }
+
+  .review-form__title {
+    padding-top: 93px;
+  }
+
+  .review-form__hidden-text {
+    display: inline;
+  }
+
+  .review-form__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .review-form__send-button {
+    width: 100%;
+    padding-top: 63px;
+    margin-bottom: 0;
+  }
+
+  .review-form__purpose-text {
+    display: inline-block;
+  }
+}

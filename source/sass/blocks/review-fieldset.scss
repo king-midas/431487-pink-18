@@ -66,3 +66,20 @@
 
 
 }
+
+@media (min-width: $desktop-width) {
+  .review-fieldset {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 43px;
+  }
+
+  .review-fieldset__input {
+    height: 129px;
+    padding-top: 15px;
+  }
+
+  .review-fieldset__title {
+    top: -26px;
+  }
+}

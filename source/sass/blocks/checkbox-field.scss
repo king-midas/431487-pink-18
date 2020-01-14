@@ -44,3 +44,15 @@
     padding-left: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .checkbox-field {
+    margin-right: 57px;
+  }
+
+  .checkbox-field__input-text {
+    white-space: nowrap;
+  }
+
+}

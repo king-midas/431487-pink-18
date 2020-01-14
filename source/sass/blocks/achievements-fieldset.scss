@@ -70,3 +70,24 @@
 
 
 }
+
+@media (min-width: $desktop-width) {
+
+  .achievements-fieldset {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+
+  .achievements-fieldset__title {
+    top: -17px;
+  }
+
+  .achievements-fieldset__column-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 21px;
+    padding-right: 0;
+    padding-left: 57px;
+  }
+
+}

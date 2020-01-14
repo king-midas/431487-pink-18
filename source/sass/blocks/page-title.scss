@@ -25,7 +25,7 @@
   .page-title {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     min-height: 328px;
-    padding-bottom: 82px;
+    padding-bottom: 84px;
     background-position-x: -270px;
     background-position-y: -111px;
   }
@@ -39,7 +39,15 @@
     text-align: center;
     color: #ffffff;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .page-title {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    padding-bottom: 104px;
+  }
 
-
+  .page-title__text {
+    padding-top: 101px;
+  }
 }
