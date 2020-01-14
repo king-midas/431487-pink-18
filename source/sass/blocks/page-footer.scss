@@ -11,17 +11,25 @@
   padding-left: 20px;
 }
 
-.page-footer__logo:hover .page-footer__pink-word-icon path {
+.page-footer__logo-image--desktop {
+  display: none;
+}
+
+.page-footer__logo-image--tablet {
+  fill: #283645;
+}
+
+.page-footer__pink-logo-glases--tablet {
   fill: #d22856;
 }
 
-.page-footer__logo:active .page-footer__logo-icon path {
-  opacity: 0.3;
+.page-footer__logo:hover .page-footer__logo-image--tablet  {
+  fill: #d22856;
 }
 
-.page-footer__logo:active .page-footer__pink-word-icon path {
-  fill: #283645;
+.page-footer__logo:active .page-footer__logo-image--tablet {
   opacity: 0.3;
+  fill: #283645;
 }
 
 @media (min-width: $tablet-width) {
