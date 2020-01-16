@@ -389,6 +389,49 @@
   width: 240px;
   }
 
+}
 
+@media (min-width: $desktop-width) {
 
+  .photo-blog__title {
+    padding-left: 186px;
+    padding-right: 186px;
+    margin-bottom: 88px;
+  }
+
+  .photo-blog__post--panorama {
+    max-width: 960px;
+  }
+
+  .photo-blog__post--panorama img {
+    width: 960px;
+    height: 506px;
+  }
+
+  .photo-blog__picture-link--panorama::before {
+    top: 54px;
+    left: 810px;
+  }
+
+  .photo-blog__post-content--panorama {
+    padding-left: 17px;
+  }
+
+  .photo-blog__post-wrapper {
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .photo-blog__post:nth-child(2n) {
+    margin-right: 20px;
+  }
+
+  .photo-blog__post:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .photo-blog__post {
+    margin-bottom: 57px;
+  }
 }

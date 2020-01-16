@@ -234,3 +234,79 @@
     display: flex;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .upload-form {
+    width: 940px;
+    margin-bottom: 27px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .upload-form__title {
+    margin-bottom: 66px;
+  }
+
+  .upload-form__wrapper {
+    width: 940px;
+    padding-left: 80px;
+  }
+
+  .upload-form__image-select {
+    padding-right: 87px;
+    padding-bottom: 55px;
+  }
+
+  .upload-form__crop-tool {
+    padding-top: 0;
+    position: relative;
+    top: -12px;
+    left: 1px;
+    width: 46px;
+    height: 47px;
+  }
+
+  .upload-form__fill-tool {
+    position: relative;
+    top: -10px;
+    width: 50px;
+    height: 47px;
+  }
+
+  .upload-form__contrast-tool {
+    position: relative;
+    top: -8px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .upload-form__toggle-icon svg {
+    padding-right: 47px;
+  }
+
+  .upload-form__button-wrapper {
+    flex-direction: row;
+    width: 400px;
+    padding-left: 3px;
+  }
+
+  .upload-form__button-submit {
+    padding-left: 42px;
+    padding-right: 38px;
+    padding-top: 11px;
+    margin-right: 44px;
+    margin-bottom: 0;
+  }
+
+  .upload-form__button-reset {
+    padding-right: 50px;
+    padding-left: 55px;
+    padding-top: 13px;
+  }
+
+  .upload-form__filter-controls {
+    padding-bottom: 145px;
+  }
+}

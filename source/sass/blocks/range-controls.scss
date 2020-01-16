@@ -89,3 +89,9 @@
   }
 
 }
+
+@media (min-width: $tablet-width) {
+  .range-controls__filter-input {
+    width: 288px;
+  }
+}
