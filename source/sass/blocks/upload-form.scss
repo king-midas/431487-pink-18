@@ -155,6 +155,7 @@
     padding-top: 57px;
     padding-bottom: 52px;
     padding-right: 35px;
+    padding-left: 0;
   }
 
   .upload-form__content {
@@ -223,5 +224,13 @@
   .upload-form__button-submit {
     margin-bottom: 26px;
     padding-left: 37px;
+  }
+
+  .upload-form__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
   }
 }
