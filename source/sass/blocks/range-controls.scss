@@ -17,8 +17,8 @@
 
 .range-controls__filter-input::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 14px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   border: 2px solid #d22856;
   border-radius: 50%;
   background-color: #ffffff;
@@ -31,8 +31,8 @@
 
 
 .range-controls__filter-input::-moz-range-thumb {
-  width: 14px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   border: 2px solid #d22856;
   border-radius: 50%;
   background-color: #ffffff;
@@ -41,4 +41,51 @@
   &:active {
     background-color: #d22856;
   }
+}
+
+.range-controls__filter-input-1 {
+  display: block;
+  margin-top: 35px;
+  position: relative;
+  left: -18px;
+}
+
+.range-controls__filter-input-2 {
+  display: none;
+}
+
+.range-controls__filter-input-3 {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .range-controls {
+    border-bottom: 0;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .range-controls__filter-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 202px;
+    height: 2px;
+  }
+
+  .range-controls__filter-input-1 {
+    left: 0;
+  }
+
+  .range-controls__filter-input-2 {
+    display: block;
+  }
+
+  .range-controls__filter-input-3 {
+    display: block;
+    margin-top: 7px;
+  }
+
 }

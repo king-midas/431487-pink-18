@@ -1,8 +1,8 @@
 .photo-blog__title {
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   padding: 0;
-  padding-top: 44px;
+  padding-top: 45px;
   min-width: 320px;
   font-family: $open-sans;
   font-size: 14px;
@@ -24,7 +24,7 @@
   max-width: 280px;
   min-height: 300px;
   margin: 0 auto;
-  margin-bottom: 19px;
+  margin-bottom: 7%;
 }
 
 .photo-blog__post:last-child {
@@ -33,16 +33,17 @@
 
 .photo-blog__post--panorama {
   max-width: none;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-bottom: 6.5%;
 }
 
 .photo-blog__post-content {
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 280px;
-  // padding: 19px;
-  // padding-top: 17px;
-  padding-top: 19px;
+  padding-top: 6.9%;
   padding-right: 19px;
   padding-left: 19px;
   padding-bottom: 19px;
@@ -53,6 +54,48 @@
   text-align: left;
   color: #283645;
   background-color: #f2f2f2;
+}
+
+.photo-blog__post-content--panorama {
+  margin: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 280px;
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 19px;
+  font-family: $open-sans;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: #283645;
+  background-color: #f2f2f2;
+}
+
+.photo-blog__post-likes--panorama {
+  padding-left: 18px;
+  font-family: $open-sans;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.photo-blog__post-content--panorama p {
+  margin: 0;
+}
+
+.photo-blog__post:nth-child(1) > .photo-blog__post-content {
+  padding-top: 6%;
 }
 
 .photo-blog__post-content p {
@@ -79,7 +122,7 @@
 }
 
 .photo-blog__post-likes {
-  padding-left: 17px;
+  padding-left: 18px;
   font-family: $open-sans;
   font-size: 12px;
   font-weight: normal;
@@ -141,6 +184,12 @@
   padding-top: 10px;
 }
 
+.photo-blog__action--panorama {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
 .photo-blog__picture-link,
 .photo-blog__picture-link img {
   margin: 0 auto;
@@ -192,6 +241,152 @@
   .photo-blog__title-bottom {
     display: block;
     margin: 0;
+  }
+
+
+  .photo-blog__post-likes {
+    text-align: right;
+    padding-left: 0;
+    margin-right: auto;
+  }
+
+  .photo-blog__post-likes--panorama {
+    text-align: right;
+    order: 1;
+  }
+
+  .photo-blog__likes-count {
+    text-align: right;
+  }
+
+  .photo-blog__title {
+    padding-top: 92px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-bottom: 76px;
+  }
+
+  .photo-blog__title-top {
+    display: inline;
+  }
+
+  .photo-blog__title-bottom {
+    display: inline;
+  }
+
+  .photo-blog__picture-link img {
+    max-width: none;
+  }
+
+  .photo-blog__post--panorama img {
+    position: relative;
+    background-size: cover;
+    width: 660px;
+    height: 509px;
+  }
+
+  .photo-blog__picture-link--panorama::before {
+    top: 57px;
+    left: 500px;
+    line-height: 35px;
+  }
+
+  .photo-blog__post-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .photo-blog__post-content--panorama {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    padding-top: 24px;
+    padding-left:27px;
+    padding-bottom: 24px;
+    margin-bottom: 50px;
+  }
+
+
+  .photo-blog__post-author {
+    order: -2;
+  }
+
+  .photo-blog__post-content--panorama p {
+    order: 3;
+  }
+
+  .photo-blog__action--panorama {
+    display: flex;
+    margin-left: 288px;
+    padding-top: 0;
+  }
+
+  .photo-blog__heart-icon--panorama {
+    order: 2;
+    margin-left: 17px;
+  }
+
+  .photo-blog__post {
+    margin: 0;
+    max-width: none;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+
+  .photo-blog__post:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .photo-blog__post-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    padding-left: 27px;
+  }
+
+  .photo-blog__post-content p {
+    min-width: 250px;
+    min-height: 50px;
+  }
+
+  .photo-blog__heart-icon {
+    order: 2;
+  }
+
+  .photo-blog__post--panorama {
+    margin: 0 auto;
+    max-width: 660px;
+  }
+
+  .photo-blog__picture-link, .photo-blog__picture-link img {
+    margin: 0;
+  }
+
+  .photo-blog__post-wrapper--panorama {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .photo-blog__post-content {
+    padding-top: 8%;
+  }
+
+  .photo-blog__post:nth-child(1) > .photo-blog__post-content {
+    padding-top: 8%;
+  }
+
+
+
+  .photo-blog__action {
+  padding-top: 10px;
+  width: 240px;
   }
 
 

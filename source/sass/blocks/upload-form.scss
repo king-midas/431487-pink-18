@@ -1,5 +1,6 @@
 .upload-form {
-  padding-top: 19px;
+  margin: 0 auto;
+  padding-top: 43px;
 }
 
 .upload-form__title {
@@ -26,16 +27,20 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 38px;
+  width: 240px;
 }
 
 .upload-form__filter-controls {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
   margin: 0 auto;
-  width: 253px;
+  width: 210px;
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-bottom: 76px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .upload-form__filter-toggle {
   display: block;
@@ -88,6 +93,7 @@
 }
 
 .upload-form__button-wrapper {
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -95,6 +101,7 @@
   padding-right: 20px;
   padding-left: 18px;
   padding-bottom: 42px;
+  max-width: 282px;
 }
 
 
@@ -118,13 +125,19 @@
 
 @media (min-width: $tablet-width) {
 
+  .upload-form {
+    padding-top: 45px;
+  }
+
   .upload-form__title {
+    margin-bottom: 68px;
     font-family: $open-sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     text-align: center;
     color: #283645;
+    width: auto;
   }
 
   .upload-form__button-submit,
@@ -134,5 +147,81 @@
     font-weight: 700;
     text-align: center;
     line-height: 18px;
+  }
+
+  .upload-form__image-select {
+    margin: 0;
+    margin-top: 0px;
+    padding-top: 57px;
+    padding-bottom: 52px;
+    padding-right: 35px;
+  }
+
+  .upload-form__content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .upload-form__filter-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 65px;
+    border: 0;
+    width: unset;
+  }
+
+  .upload-form__filter-toggle {
+    display: flex;
+    flex-direction: row;
+    width: unset;
+    height: unset;
+    padding-top: 26px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .upload-form__crop-tool {
+    width: 22px;
+    height: 22px;
+    padding-top: 1px;
+  }
+
+  .upload-form__fill-tool {
+    width: 24px;
+    height: 25px;
+    padding-top: 0;
+  }
+
+  .upload-form__contrast-tool {
+    width: 16px;
+    height: 16px;
+    padding-top: 0;
+  }
+
+  .upload-form__toggle-icon {
+    height: 23px;
+  }
+
+  .upload-form__toggle-icon svg {
+    min-width: 48px;
+
+    padding-right: 17px;
+  }
+
+  .upload-form__button-wrapper {
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 13px;
+  }
+
+  .upload-form__button-submit {
+    margin-bottom: 26px;
+    padding-left: 37px;
   }
 }
