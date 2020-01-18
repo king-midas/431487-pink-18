@@ -9,14 +9,14 @@
 }
 
 .range-controls__filter-input {
-  -webkit-appearance: none;
+  appearance: none;
   width: 240px;
   height: 2px;
   background-color: black;
 }
 
 .range-controls__filter-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   width: 11px;
   height: 11px;
   border: 2px solid #d22856;
@@ -59,13 +59,11 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .range-controls {
     border-bottom: 0;
     position: relative;
     margin: 0;
     padding: 0;
-
   }
 
   .range-controls__filter-input {
@@ -87,10 +85,15 @@
     display: block;
     margin-top: 7px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
+  .range-controls__filter-input {
+    width: 202px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .range-controls__filter-input {
     width: 288px;
   }

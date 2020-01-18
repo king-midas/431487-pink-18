@@ -51,8 +51,6 @@
   margin-right: 15px;
 }
 
-
-
 .downloads__description {
   display: block;
   font-family: $open-sans;
@@ -93,7 +91,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .downloads {
     padding-top: 52px;
   }
@@ -118,7 +115,7 @@
 
   .downloads__description {
     margin-top: 43px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

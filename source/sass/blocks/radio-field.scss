@@ -17,7 +17,7 @@
 
 .radio-field__checkbox {
   display: block;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   width: 35px;
@@ -33,7 +33,6 @@
 }
 
 .radio-field__input:checked ~ .radio-field__checkbox {
-  background-color: red;
   background: url("../img/icon-map-marker.svg");
 }
 
@@ -49,7 +48,6 @@
     padding-left: 22px;
     white-space: nowrap;
   }
-
 }
 
 @media (min-width: $desktop-width) {

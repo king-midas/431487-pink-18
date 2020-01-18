@@ -40,39 +40,36 @@
     margin-bottom: 65px;
     order: 5;
     border: 2px solid #e5e5e5;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   .achievements-fieldset__title {
     display: inline-block;
-  padding: 0;
-  font-family: $open-sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #d22856;
-  text-align: center;
-  text-transform: uppercase;
+    padding: 0;
+    font-family: $open-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #d22856;
+    text-align: center;
+    text-transform: uppercase;
 
-  position: relative;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  padding-right: 32px;
-  padding-left: 32px;
+    position: relative;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .achievements-fieldset__column-wrapper {
     padding-top: 21px;
-    padding-left:58px;
+    padding-left: 58px;
   }
-
-
 }
 
 @media (min-width: $desktop-width) {
-
   .achievements-fieldset {
     width: 100%;
     padding-bottom: 13px;
@@ -89,5 +86,4 @@
     padding-right: 0;
     padding-left: 57px;
   }
-
 }

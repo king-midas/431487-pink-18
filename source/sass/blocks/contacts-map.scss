@@ -63,7 +63,7 @@
     height: 16px;
     border-radius: 50%;
     background-color: #d22856;
-    border: 10px solid #fff;
+    border: 10px solid #ffffff;
     z-index: 3;
     top: 193px;
     left: 312px;
@@ -71,7 +71,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .contacts-map {
     max-height: none;
   }

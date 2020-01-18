@@ -42,6 +42,7 @@
   padding-bottom: 76px;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .upload-form__filter-toggle {
   display: block;
   width: 44px;
@@ -124,7 +125,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .upload-form {
     padding-top: 45px;
   }
@@ -142,7 +142,7 @@
 
   .upload-form__button-submit,
   .upload-form__button-reset {
-    font-weight: $open-sans;
+    font-family: $open-sans;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -151,7 +151,7 @@
 
   .upload-form__image-select {
     margin: 0;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 57px;
     padding-bottom: 52px;
     padding-right: 35px;
@@ -173,7 +173,7 @@
     padding-right: 0;
     padding-bottom: 65px;
     border: 0;
-    width: unset;
+    width: 271px;
   }
 
   .upload-form__filter-toggle {
@@ -236,7 +236,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .upload-form {
     width: 940px;
     margin-bottom: 27px;
@@ -273,6 +272,7 @@
     top: -10px;
     width: 50px;
     height: 47px;
+    padding-right: 45px;
   }
 
   .upload-form__contrast-tool {
@@ -308,5 +308,6 @@
 
   .upload-form__filter-controls {
     padding-bottom: 145px;
+    width: 400px;
   }
 }

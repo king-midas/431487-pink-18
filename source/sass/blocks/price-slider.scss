@@ -6,8 +6,6 @@
   background: #f2f2f2 url("../img/bg-triangle-white-3.svg") no-repeat center -46px;
 }
 
-
-
 .price-slider__slides-container {
   overflow: hidden;
   margin: 0;
@@ -18,7 +16,6 @@
   padding-left: 20px;
 }
 
-
 .price-slider__slides {
   width: 300%;
 }
@@ -26,8 +23,6 @@
 .price-slider input {
   display: none;
 }
-
-
 
 .price-slider__controls {
   display: flex;
@@ -77,12 +72,9 @@
     transform: translate(-66.6%);
     transition: transform 0.8s ease;
   }
-
 }
 
-
 @media (min-width: $tablet-width) {
-
   .price-slider__controls {
     display: none;
   }
@@ -107,7 +99,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .price-slider {
     padding-bottom: 54px;
   }
@@ -121,5 +112,4 @@
     padding-left: 0;
     padding-right: 0;
   }
-
 }

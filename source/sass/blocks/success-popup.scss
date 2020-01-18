@@ -1,6 +1,6 @@
 .success-popup {
   display: none;
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   z-index: 4;
 }
 
@@ -48,7 +48,7 @@
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  color: #fff;
+  color: #ffffff;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 3px;
@@ -59,7 +59,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .success-popup {
     width: 460px;
     margin: 0 auto;
@@ -108,6 +107,5 @@
     margin-top: 48px;
     margin-right: 160px;
     margin-left: 160px;
-
   }
 }

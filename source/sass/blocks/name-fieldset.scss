@@ -36,16 +36,7 @@
   color: #283645;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
-}
 
-
-.name-fieldset__item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 17px;
-}
-
-.name-fieldset__text-input {
   &:hover {
     border: 2px solid #283645;
   }
@@ -53,6 +44,13 @@
   &:active {
     border: 2px solid #d22856;
   }
+}
+
+
+.name-fieldset__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,7 +75,7 @@
   }
 
   .name-fieldset__text-input {
-    width: 100%;;
+    width: 100%;
   }
 }
 

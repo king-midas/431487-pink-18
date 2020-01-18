@@ -100,7 +100,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .advantages {
     padding-top: 57px;
   }
@@ -169,7 +168,6 @@
   .advantages__inner {
     padding-bottom: 10px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -226,7 +224,7 @@
     margin-right: 30px;
     margin-bottom: 0;
     padding-top: 308px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;

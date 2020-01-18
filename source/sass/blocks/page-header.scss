@@ -13,10 +13,6 @@
   background-color: $page-header--full__backg-color;
 }
 
-// .page-header__wrapper {
-//   width: 100%;
-// }
-
 .page-header__logo-link {
   display: inline-block;
   vertical-align: top;
@@ -48,11 +44,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
-  .page-header__logo-image--tablet {
-    display: block;
-  }
-
   .page-header__logo-image--mobile {
     display: none;
   }
@@ -62,6 +53,7 @@
   }
 
   .page-header__logo-image--tablet {
+    display: block;
     fill: #ffffff;
   }
 
@@ -86,11 +78,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
-  .page-header__logo-image--desktop {
-    display: block;
-  }
-
   .page-header__logo-image--mobile {
     display: none;
   }
@@ -100,6 +87,7 @@
   }
 
   .page-header__logo-image--desktop {
+    display: block;
     fill: #ffffff;
   }
 
@@ -114,8 +102,7 @@
 
   .page-header {
     position: absolute;
-    background-color: rgba(0,0,0,.3);
-
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__wrapper {

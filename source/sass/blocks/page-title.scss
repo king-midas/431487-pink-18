@@ -29,7 +29,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .page-title {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     min-height: 330px;
@@ -39,7 +38,7 @@
   }
 
   .page-title__text {
-    margin-top: 44px;;
+    margin-top: 44px;
     font-family: $open-sans;
     font-size: 50px;
     font-weight: 300;
