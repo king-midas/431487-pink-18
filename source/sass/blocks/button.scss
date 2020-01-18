@@ -1,0 +1,38 @@
+.button--send-form {
+  font-family: $open-sans;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--send-form {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}

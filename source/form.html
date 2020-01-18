@@ -9,22 +9,25 @@
 </head>
 
 <body>
-
   <header class="page-header page-header--full">
 
     <div class="page-header__wrapper">
-      <a class="page-header__logo-link">
-        <picture class="image-image">
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-          </picture>
+      <a class="page-header__logo-link" href="index.html">
+        <svg class="page-header__logo-image--mobile" width="74" height="22">
+          <use xlink:href="../img/sprite.svg#logo-pink__header--mobile"></use>
+        </svg>
+        <svg class="page-header__logo-image--tablet"  width="146" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink__header--tablet"></use>
+        </svg>
+        <svg class="page-header__logo-image--desktop" width="146" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink__header--desktop"></use>
+        </svg>
       </a>
       <nav class="main-nav main-nav--opened" aria-label="Основное меню">
         <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-              <path class="main-nav__icon-cross" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-            </svg>
+          <svg class="main-nav__icon-cross" width="23" height="23">
+            <use xlink:href="img/sprite.svg#main-nav__icon-cross"></use>
+          </svg>
           <img class="main-nav__icon-burger" src="img/icon-menu-burger.svg" width="50" height="">
         </button>
         <ul class="main-nav__list site-list">
@@ -32,226 +35,265 @@
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main>
-    <div class="page-title">
-      <h1 class="page-title__text">
+    <div class="page-title page-title--form">
+      <h1 class="page-title__text page-title__text--form">
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
     </div>
-    <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="review-form__title">
-        <p>
-          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-          <span class="review-form__hidden-text">
-            Пожалуйста, заполните форму ниже:
-          </span>
-        </p>
-      </div>
-      <fieldset class="name-fieldset">
-        <label class="name-fieldset__item">
-          <span class="name-fieldset__field-name">
-            Фамилия:
-          </span>
-          <span class="name-fieldset__input-wrapper">
-            <input class="name-fieldset__text-input" type="text" name="user-surname" placeholder="Укажите фамилию *"
-            pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
-          </span>
-        </label>
-        <label class="name-fieldset__item">
-          <span class="name-fieldset__field-name">
-            Имя:
-          </span>
-          <span class="name-fieldset__input-wrapper">
-            <input class="name-fieldset__text-input" type="text" name="user-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё \s]+$"
-            data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
-          </span>
-        </label>
-        <label class="name-fieldset__item">
-          <span class="name-fieldset__field-name">
-            Отчество:
-          </span>
-          <span class="name-fieldset__input-wrapper">
-            <input class="name-fieldset__text-input" type="text" name="user-patronym" placeholder="Hу и отчество тоже" pattern="[А-Яа-яЁё \s]+$"
-            data-error="Ошибка, перепроверьте отчество" title="Только русские буквы" required>
-          </span>
-        </label>
-      </fieldset>
-      <fieldset class="achievements-fieldset">
-        <h2 class="achievements-fieldset__title">
-          Ваши безбашенные достижения в путешествии
-        </h2>
-        <div class="achievements-fieldset__column-wrapper">
-          <div class="achievements-fieldset__column">
-            <label class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" id="checkbox-1" name="user-achievements" checked>
-              <span class="checkbox-field__checkbox">
 
+      <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="review-form__title">
+          <p>
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="review-form__hidden-text">
+              Пожалуйста, заполните форму ниже:
+            </span>
+          </p>
+        </div>
+        <div class="review-form__wrapper">
+        <fieldset class="name-fieldset">
+          <label class="name-fieldset__item">
+            <span class="name-fieldset__field-name">
+              Фамилия:
+            </span>
+
+              <input class="name-fieldset__text-input" type="text" name="user-surname" placeholder="Укажите фамилию *"
+              pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
+
+          </label>
+          <label class="name-fieldset__item">
+            <span class="name-fieldset__field-name">
+              Имя:
+            </span>
+
+              <input class="name-fieldset__text-input" type="text" name="user-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё \s]+$"
+              data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
+
+          </label>
+          <label class="name-fieldset__item">
+            <span class="name-fieldset__field-name">
+              Отчество:
+            </span>
+
+              <input class="name-fieldset__text-input" type="text" name="user-patronym" placeholder="Hу и отчество тоже" pattern="[А-Яа-яЁё \s]+$"
+              data-error="Ошибка, перепроверьте отчество" title="Только русские буквы" required>
+
+          </label>
+        </fieldset>
+        <fieldset class="achievements-fieldset">
+          <h2 class="achievements-fieldset__title">
+            Ваши безбашенные достижения в путешествии
+          </h2>
+          <div class="achievements-fieldset__column-wrapper">
+            <div class="achievements-fieldset__column">
+              <label class="checkbox-field">
+                <input class="checkbox-field__input visually-hidden" type="checkbox" id="checkbox-1" name="user-achievements" checked>
+                <span class="checkbox-field__checkbox">
+
+                </span>
+                <span class="checkbox-field__input-text">
+                  Сделал селфи с акулой
+                </span>
+              </label>
+              <label class="checkbox-field">
+                <input class="checkbox-field__input visually-hidden" type="checkbox" id="checkbox-2" name="user-achievements" checked>
+                <span class="checkbox-field__checkbox">
+
+                </span>
+                <span class="checkbox-field__input-text">
+                  Обгорел на пляже
+                </span>
+              </label>
+            </div>
+            <div class="achievements-fieldset__column">
+              <label class="checkbox-field">
+                <input class="checkbox-field__input visually-hidden" type="checkbox" id="checkbox-3" name="user-achievements">
+                <span class="checkbox-field__checkbox">
+
+                </span>
+                <span class="checkbox-field__input-text">
+                  Видел Чака Норриса
+                </span>
+              </label>
+              <label class="checkbox-field">
+                <input class="checkbox-field__input visually-hidden" type="checkbox" id="checkbox-4" name="user-achievements">
+                <span class="checkbox-field__checkbox">
+
+                </span>
+                <span class="checkbox-field__input-text">
+                  Накупил сувениров
+                </span>
+              </label>
+            </div>
+            <div class="achievements-fieldset__column">
+              <label class="checkbox-field">
+                <input class="checkbox-field__input visually-hidden" type="checkbox" id="checkbox-5" name="user-achievements" checked>
+                <span class="checkbox-field__checkbox">
+
+                </span>
+                <span class="checkbox-field__input-text">
+                  Удержал башню
+                </span>
+              </label>
+              <label class="checkbox-field">
+                <input class="checkbox-field__input visually-hidden" type="checkbox" id="checkbox-6" name="user-achevements">
+                <span class="checkbox-field__checkbox">
+
+                </span>
+                <span class="checkbox-field__input-text">
+                  Разгромил отель
+                </span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="contacts-fieldset">
+          <h2 class="contacts-fieldset__title">
+            Контактная информация
+          </h2>
+          <div class="contacts-fieldset__container">
+            <label class="contacts-fieldset__item">
+              <span class="contacts-fieldset__info contacts-fieldset__info--mobile">
+                Номер телефона
               </span>
-              <span class="checkbox-field__input-text">
-                Сделал селфи с акулой
+              <span class="contacts-fieldset__input-wrapper contacts-fieldset__input-wrapper--phone-icon">
+                <input class="contacts-fieldset__input" type="text" id="zipCode" name="user-phone"
+                pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" data-error="Ошибка, укажите номер"
+                title="+7(888)888-88-88" required>
               </span>
             </label>
-            <label class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" id="checkbox-2" name="user-achievements" checked>
-              <span class="checkbox-field__checkbox">
-
+            <label class="contacts-fieldset__item">
+              <span class="contacts-fieldset__info contacts-fieldset__info--mobile">
+                Адрес почты
               </span>
-              <span class="checkbox-field__input-text">
-                Обгорел на пляже
+              <span class="contacts-fieldset__input-wrapper contacts-fieldset__input-wrapper--email-icon">
+                <input class="contacts-fieldset__input" type="email" id="emailField" name="user-email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Введите почту *"
+                data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
               </span>
             </label>
           </div>
-          <div class="achievements-fieldset__column">
-            <label class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" id="checkbox-3" name="user-achievements">
-              <span class="checkbox-field__checkbox">
-
-              </span>
-              <span class="checkbox-field__input-text">
-                Видел Чака Норриса
-              </span>
+        </fieldset>
+        <fieldset class="application-fieldset">
+          <h2 class="application-fieldset__title">
+            С каким приложением путешествовали?
+          </h2>
+          <div class="application-fieldset__input-wrapper">
+            <label class="radio-field">
+              <input class="radio-field__input visually-hidden" type="radio" name="user-application" id="radio1" checked>
+              <span class="radio-field__checkbox"></span>
+              <span class="radio-field__input-text">Pink для iOS</span>
             </label>
-            <label class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" id="checkbox-4" name="user-achievements">
-              <span class="checkbox-field__checkbox">
-
-              </span>
-              <span class="checkbox-field__input-text">
-                Накупил сувениров
-              </span>
+            <label class="radio-field">
+              <input class="radio-field__input visually-hidden" type="radio" name="user-application" id="radio2">
+              <span class="radio-field__checkbox"></span>
+              <span class="radio-field__input-text">Pink на Android</span>
             </label>
-          </div>
-          <div class="achievements-fieldset__column">
-            <label class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" id="checkbox-5" name="user-achievements" checked>
-              <span class="checkbox-field__checkbox">
-
-              </span>
-              <span class="checkbox-field__input-text">
-                Удержал башню
-              </span>
-            </label>
-            <label class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" id="checkbox-6" name="user-achevements" checked>
-              <span class="checkbox-field__checkbox">
-
-              </span>
-              <span class="checkbox-field__input-text">
-                Разгромил отель
-              </span>
+            <label class="radio-field">
+              <input class="radio-field__input visually-hidden" type="radio" name="user-application" id="radio3">
+              <span class="radio-field__checkbox"></span>
+              <span class="radio-field__input-text">Windows Phone</span>
             </label>
           </div>
+        </fieldset>
+        <fieldset class="review-fieldset">
+          <h2 class="review-fieldset__title">
+            Опишите свои эмоции
+          </h2>
+          <div class="review-fieldset__input-wrapper">
+            <textarea class="review-fieldset__input" name="user-review" data-errpr="Ошибка, оставьте отзыв" rows="6" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях" title="Только русские буквы" required></textarea>
+          </div>
+        </fieldset>
+        <div class="review-form__send-button">
+          <input class="button button--send-form"  type="submit" name="contest-form-submit" value="Отправить форму">
+          <span class="review-form__note">
+            <span class="review-form__note-symbol">*</span>
+            — обязательные <span class="review-form__purpose-text">для заполнения</span> поля
+          </span>
         </div>
-      </fieldset>
-      <fieldset class="contacts-fieldset">
-        <h2 class="contacts-fieldset__title">
-          Контактная информация
-        </h2>
-        <div class="contacts-fieldset__container">
-          <label class="contacts-fieldset__item">
-            <span class="contacts-fieldset__info contacts-fieldset__info--mobile">
-              Номер телефона
-            </span>
-            <span class="contacts-fieldset__input-wrapper contacts-fieldset__input-wrapper--phone-icon">
-              <input class="contacts-fieldset__input" type="text" id="zipCode" name="user-phone"
-              pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" data-error="Ошибка, укажите номер"
-              title="+7(888)888-88-88" required>
-            </span>
-          </label>
-          <label class="contacts-fieldset__item">
-            <span class="contacts-fieldset__info contacts-fieldset__info--mobile">
-              Адрес почты
-            </span>
-            <span class="contacts-fieldset__input-wrapper contacts-fieldset__input-wrapper--email-icon">
-              <input class="contacts-fieldset__input" type="email" id="emailField" name="user-email"
-              pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Введите почту *"
-              data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
-            </span>
-          </label>
-        </div>
-      </fieldset>
-      <fieldset class="application-fieldset">
-        <h2 class="application-fieldset__title">
-          С каким приложением путешествовали?
-        </h2>
-        <div class="application-fieldset__input-wrapper">
-          <label class="radio-field">
-            <input class="radio-field__input" type="radio" name="user-application" id="radio1" checked>
-            <span class="radio-field__checkbox"></span>
-            <span class="radio-field__input-text">Pink на iOS</span>
-          </label>
-          <label class="radio-field">
-            <input class="radio-field__input" type="radio" name="user-application" id="radio2">
-            <span class="radio-field__checkbox"></span>
-            <span class="radio-field__input-text">Pink на Android</span>
-          </label>
-          <label class="radio-field">
-            <input class="radio-field__input" type="radio" name="user-application" id="radio3">
-            <span class="radio-field__checkbox"></span>
-            <span class="radio-field__input-text">Windows Phone</span>
-          </label>
-        </div>
-      </fieldset>
-      <fieldset class="review-fieldset">
-        <h2 class="review-fieldset__title">
-          Опишите свои эмоции
-        </h2>
-        <div class="review-fieldset__input-wrapper">
-          <textarea class="review-fieldset__input text-field__input" name="user-review" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"
-data-error="Ошибка, оставьте отзыв"  title="Только русские буквы" required>
-        </textarea>
-        </div>
-      </fieldset>
-      <div class="review-form__send-button">
-        <input class="button button--send-form"  type="submit" name="contest-form-submit" value="Отправить форму">
-        <span class="review-form__text-block">
-          <span>*</span>
-          - обязательные для заполнения поля
-        </span>
-      </div>
-      <!-- Здесь будет поппапп успешной отправки формы -->
-      <!-- здесь будет поппапп ошибки отправки формы -->
-    </form>
+        <!-- Здесь будет поппапп успешной отправки формы -->
+        <!-- здесь будет поппапп ошибки отправки формы -->
+      </form>
+</div>
   </main>
 
   <footer class="page-footer">
-      <div class="page-footer__container">
-        <a class="page-footer__logo" href="#">
-          <!-- <picture>
+    <div class="page-footer__container">
+      <a class="page-footer__logo" href="index.html">
+        <svg class="page-footer__logo-image--tablet" width="146" height="40"><use xlink:href="img/sprite.svg#logo-pink__footer--tablet"></use>
+        </svg>
+        <svg class="page-footer__logo-image--desktop" width="146" height="40"><use xlink:href="img/sprite.svg#logo-pink__footer--desktop"></use>
+        </svg>
 
-          </picture> -->
-        </a>
-        <ul class="social-links">
-          <li>
-            <a  class="social-links__icon social-links__icon--twitter" href="#twitter" title="twitter">twitter</a>
-          </li>
-          <li>
-            <a class="social-links__icon social-links__icon--facebook" href="#facebook" title="facebook">facebook</a>
-          </li>
-          <li>
-            <a class="social-list__icon social-list__icon--youtube" href="#youtube">youtube</a>
-          </li>
-        </ul>
-        <a class="developer" href="https://htmlacademy.ru/" target="_blank">
-          <span class="developer__text">Разработано</span>
 
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#d22856">
-            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"></path>
+      </a>
+      <ul class="social-links social-links__list">
+        <li>
+          <a class="social-links__link social-links__link--twitter" href="#twitter" title="twitter">
+            <svg class="social-links__icon social-links__icon--twitter" width="17" height="14"><use xlink:href="img/sprite.svg#social-links__twitter-svg"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link social-links__link--facebook" href="#facebook" title="facebook">
+            <svg class="social-links__icon social-links__icon--facebook" width="8" height="18"><use xlink:href="img/sprite.svg#social-links__facebook-svg"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link social-list__link--youtube" href="#youtube">
+            <svg class="social-links__icon social-links__icon--youtube" width="14" height="13"><use xlink:href="img/sprite.svg#social-links__youtube-svg"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="developer">
+        <span class="developer__text">Разработано</span>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="developer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#developer__academy-logo-icon"></use>
           </svg>
         </a>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <article class="failure-popup">
+    <h2 class="failure-popup__title">
+      Что-то пошло не так!
+    </h2>
+    <p class="failure-popup__text">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <button class="failure-popup__button" id="failure-popup-btn" type="button"
+                value="Ок">Ок</button>
+  </article>
+  <aticle class="success-popup">
+    <div class="success-popup__wrapper">
+      <h2 class="success-popup__title">
+        Ваша заявка отправлена
+      </h2>
+      <p class="success-popup__text">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее &nbsp;время мы рассмотрим ее и оповестим вас.
+      </p>
+    </div>
+    <div class="success-popup__button-wrapper">
+      <button class="success-popup__button" id="success-popup-btn" type="button"
+      value="Закрыть окно">Закрыть окно</button>
+    </div>
+
+  </aticle>
   </body>
   </html>

@@ -13,26 +13,26 @@
   <header class="page-header page-header--full">
 
     <div class="page-header__wrapper">
-      <a class="page-header__logo-link">
-        <picture class="image-image">
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-            alt="Логотип Pink">
-        </picture>
+      <a class="page-header__logo-link" href="#" aria-label="Логотип Pink">
+        <svg class="page-header__logo-image--mobile" width="74" height="22">
+          <use xlink:href="../img/sprite.svg#logo-pink__header--mobile"></use>
+        </svg>
+        <svg class="page-header__logo-image--tablet"  width="146" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink__header--tablet"></use>
+        </svg>
+        <svg class="page-header__logo-image--desktop" width="146" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink__header--desktop"></use>
+        </svg>
       </a>
       <nav class="main-nav main-nav--opened" aria-label="Основное меню">
         <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867"
-            enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-            <path class="main-nav__icon-cross" fill="#FFFFFF"
-              d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
+          <svg class="main-nav__icon-cross" width="23" height="23">
+            <use xlink:href="img/sprite.svg#main-nav__icon-cross"></use>
           </svg>
           <img class="main-nav__icon-burger" src="img/icon-menu-burger.svg" width="50" height="">
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
@@ -42,7 +42,7 @@
             <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -50,27 +50,43 @@
   </header>
   <main>
     <section class="download-app download-app--short">
-      <p class="download-app__title">Взгляните на&nbsp;жизнь<br>иначе!</p>
-      <div class="download-app__content">
-        <h1 class="visually-hidden">Pink - приложение для фотографов</h1>
-        <section class="downloads">
-          <div class="downloads__inner">
-            <a class="btn downloads__download-btn" href="https://apps.apple.com/ru/genre/ios/id36"
-              target="_blank">Скачать приложение</a>
-            <div class="downloads__platforms">
-              <a class="downloads__platform downloads__platform--apple" href="https://apps.apple.com/ru/genre/ios/id36"
-                target="_blank" title="Скачать для iPhone и iPad">Apple</a>
-              <a class="downloads__platform downloads__platform--android" href="https://play.google.com" target="_blank"
-                title="Скачать для Android">Android</a>
-              <a class="downloads__platform downloads__platform--windows" href="https://microsoft.com/store/"
-                target="_blank" title="Скачать для Windows">Windows</a>
-            </div>
-            <div class="downloads__description">
-              <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div>
+<div class="download-app__wrapper">
+  <div class="download-app__inner">
+          <p class="download-app__title">Взгляните на&nbsp;жизнь<br>иначе!</p>
+          <div class="download-app__content">
+            <h1 class="visually-hidden">Pink - приложение для фотографов</h1>
+            <section class="downloads">
+              <div class="downloads__inner">
+                <a class="btn downloads__download-btn" href="https://apps.apple.com/ru/genre/ios/id36"
+                  target="_blank">Скачать приложение</a>
+                <div class="downloads__platforms">
+                  <a class="downloads__platform downloads__platform--apple" href="https://apps.apple.com/ru/genre/ios/id36"
+                    target="_blank" title="Скачать приложение Pink для iPhone и iPad">
+                    <svg class="downloads__apple-icon" width="47" height="56"><use xlink:href="img/sprite.svg#downloads__apple-svg"></use>
+                    </svg>
+                    Apple
+                  </a>
+                  <a class="downloads__platform downloads__platform--android" href="https://play.google.com" target="_blank"
+                    title="Скачать приложение Pink для Android">
+                    <svg class="downloads__android-icon" width="42" height="47"><use xlink:href="img/sprite.svg#downloads__android-svg"></use>
+                    </svg>
+                    Android
+                  </a>
+                  <a class="downloads__platform downloads__platform--windows" href="https://microsoft.com/store/"
+                    target="_blank" title="Скачать приложение Pink для Windows">
+                    <svg class="downloads__windows-icon" width="44" height="41"><use xlink:href="img/sprite.svg#downloads__windows-svg"></use>
+                    </svg>
+                    Windows
+                  </a>
+                </div>
+                <div class="downloads__description">
+                  <p class="downloads__description-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
+              </div>
+            </section>
           </div>
-        </section>
-      </div>
+  </div>
+</div>
     </section>
     <section class="advantages">
       <div class="advantages__title-wrapper">
@@ -84,12 +100,12 @@
       <div class="advantages__wrapper">
         <div class="advantages__inner">
           <ul class="advantages__list">
-            <div class="advantages__item advantages__item--mood">
+            <li class="advantages__item advantages__item--mood">
               <h3 class="advantages__name">Поднимает настроение</h3>
               <p class="advantages__text">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
-            </div>
+            </li>
             <li class="advantages__item advantages__item--world">
               <h3 class="advantages__name">Меняет мир вокруг</h3>
               <p class="advantages__text">
@@ -109,14 +125,20 @@
     <section class="research">
       <div class="research__container">
         <div class="research__item">
+          <div class="research__item-image">
+          </div>
+          <div class="research__item-text">
           <h3 class="research__title">
-            Эффект на 24 часа!
+            Эффект на&nbsp;24&nbsp;часа!
           </h3>
-          <p>
-            Британские ученые провели исследования и доказал, что положительный эффект от использования приложения
+          <p class="research__text">
+            Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения
             длится целые сутки!
           </p>
-          <a class="research__link" href="#"></a>
+          <a class="research__link" href="#" aria-label="Узнать больше о положительном эффекте приложения Pink на сайте исследования">
+            Узнать больше об исследовании
+          </a>
+        </div>
         </div>
       </div>
     </section>
@@ -154,8 +176,8 @@
               серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
-          <button class="reviews__nav  reviews__nav--previous" type="button">Предыдущий</button>
-          <button class="reviews__nav  reviews__nav--next" type="button">Следующий</button>
+          <button class="reviews__nav  reviews__nav--previous" type="button" aria-label="Предыдущий отзыв">Предыдущий</button>
+          <button class="reviews__nav  reviews__nav--next" type="button" aria-label="Следующий отзыв">Следующий</button>
         </div>
 
         <div class="reviews__slider-controls slider__controls">
@@ -309,7 +331,7 @@
               href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__item contacts__item--adress">
-            <h3 class="contacts__item-title conatcts__item-title--adress">
+            <h3 class="contacts__item-title contacts__item-title--adress">
               Приезжайте в гости:
             </h3>
             <address class="contacts__item-info contacts__item-info--adress">
@@ -333,36 +355,42 @@
   <footer class="page-footer page-footer--index-page">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="#">
-        <picture>
+        <svg class="page-footer__logo-image--tablet" width="146" height="40"><use xlink:href="img/sprite.svg#logo-pink__footer--tablet"></use>
+        </svg>
+        <svg class="page-footer__logo-image--desktop" width="146" height="40"><use xlink:href="img/sprite.svg#logo-pink__footer--desktop"></use>
+        </svg>
 
-        </picture>
+
       </a>
-      <ul class="social-links">
+      <ul class="social-links social-links__list">
         <li>
-          <a class="social-links__icon social-links__icon--twitter" href="#twitter" title="twitter">twitter</a>
+          <a class="social-links__link social-links__link--twitter" href="#twitter" title="twitter">
+            <svg class="social-links__icon social-links__icon--twitter" width="17" height="14"><use xlink:href="img/sprite.svg#social-links__twitter-svg"></use>
+            </svg>
+          </a>
         </li>
         <li>
-          <a class="social-links__icon social-links__icon--facebook" href="#facebook" title="facebook">facebook</a>
+          <a class="social-links__link social-links__link--facebook" href="#facebook" title="facebook">
+            <svg class="social-links__icon social-links__icon--facebook" width="8" height="18"><use xlink:href="img/sprite.svg#social-links__facebook-svg"></use>
+            </svg>
+          </a>
         </li>
         <li>
-          <a class="social-links__icon social-links__icon--youtube" href="#youtube">youtube</a>
+          <a class="social-links__link social-list__link--youtube" href="#youtube">
+            <svg class="social-links__icon social-links__icon--youtube" width="14" height="13"><use xlink:href="img/sprite.svg#social-links__youtube-svg"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <a class="developer" href="https://htmlacademy.ru/" target="_blank">
+      <div class="developer">
         <span class="developer__text">Разработано</span>
-
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
-          xml:space="preserve" fill="#d22856">
-          <path
-            d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z">
-          </path>
-        </svg>
-      </a>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="developer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#developer__academy-logo-icon"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
-  <script type="text/javascript" src="js/main-menu.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </body>
 
 </html>

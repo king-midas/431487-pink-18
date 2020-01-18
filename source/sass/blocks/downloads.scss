@@ -1,6 +1,6 @@
 .downloads {
   padding-top: 28px;
-  padding-bottom: 13px;
+  padding-bottom: 4px;
   background-color: #1d2631;
   text-align: center;
 }
@@ -8,10 +8,12 @@
 .downloads__inner {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 25px;
   margin: 0 auto;
 }
 
 .downloads__download-btn {
+  font-size: 18px;
   border: 3px solid #ffffff;
   border-radius: 30px;
   color: #ffffff;
@@ -34,33 +36,86 @@
   vertical-align: top;
   width: 47px;
   height: 56px;
-  background-color: #d22856;
   margin-right: 14px;
   margin-left: 14px;
   text-align: center;
 }
 
-.downloads__platform--apple {
-  background: url("../img/logo-apple.svg") no-repeat top left;
-  background-size: 47px 56px;
-}
-
 .downloads__platform--android {
-  background: url("../img/logo-android.svg") no-repeat center 8px;
-  background-size: 43px 47px;
+  padding-top: 8px;
+  margin-right: 15px;
 }
 
 .downloads__platform--windows {
-  background: url("../img/logo-microsoft.svg") no-repeat right 12px;
-  background-size: 44px 41px;
+  padding-top: 12px;
+  margin-right: 15px;
 }
 
 .downloads__description {
+  display: block;
   font-family: $open-sans;
   font-size: 14px;
   text-align: center;
   line-height: 24px;
   font-weight: 300;
-  margin-top: 22px;
+  margin-top: 12px;
   color: #ffffff;
+}
+
+.downloads__description-text {
+  display: block;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .downloads__description {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+
+  .downloads {
+    background-color: transparent;
+  }
+
+  .downloads__inner {
+    padding-left: 0;
+  }
+
+  .downloads__platforms {
+    padding-top: 14px;
+  }
+
+  .download-app__inner {
+    padding-bottom: 81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .downloads {
+    padding-top: 52px;
+  }
+
+  .downloads__download-btn {
+    font-size: 21px;
+  }
+
+  .downloads__platforms {
+    padding-top: 35px;
+  }
+
+  .downloads__platform--android {
+    padding-top: 8px;
+    margin-right: 15px;
+  }
+
+  .downloads__platform--windows {
+    padding-top: 12px;
+    margin-right: 15px;
+  }
+
+  .downloads__description {
+    margin-top: 43px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

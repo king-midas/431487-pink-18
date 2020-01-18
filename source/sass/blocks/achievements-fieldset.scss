@@ -1,9 +1,18 @@
 .achievements-fieldset {
   background-color: #f2f2f2;
   border: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
 }
 
 .achievements-fieldset__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 16px;
   font-family: $open-sans;
   font-size: 14px;
   font-weight: normal;
@@ -11,4 +20,70 @@
   text-align: center;
   color: #d22856;
   text-transform: uppercase;
+}
+
+.achievements-fieldset__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements-fieldset__column-wrapper {
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .achievements-fieldset {
+    padding: 0;
+    padding-bottom: 5px;
+    margin-bottom: 65px;
+    order: 5;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  .achievements-fieldset__title {
+    display: inline-block;
+    padding: 0;
+    font-family: $open-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #d22856;
+    text-align: center;
+    text-transform: uppercase;
+
+    position: relative;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .achievements-fieldset__column-wrapper {
+    padding-top: 21px;
+    padding-left: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievements-fieldset {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+
+  .achievements-fieldset__title {
+    top: -17px;
+  }
+
+  .achievements-fieldset__column-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 21px;
+    padding-right: 0;
+    padding-left: 57px;
+  }
 }

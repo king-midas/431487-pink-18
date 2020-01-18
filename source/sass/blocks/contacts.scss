@@ -74,3 +74,137 @@
   line-height: 30px;
   font-style: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 44px;
+  }
+
+  .contacts__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contacts__subtitle {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contacts__title-wrapper {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .contacts__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+
+  .contacts__item--phone {
+    margin-right: 9px;
+  }
+
+  .conatcts__item--email {
+    margin-left: 10px;
+  }
+
+  .contacts__item--adress {
+    width: 220px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__item-title--email {
+    padding-top: 35px;
+    padding-left: 23px;
+  }
+
+  .contacts__item-info--phone {
+    padding-top: 12px;
+  }
+
+  .contacts__item-info--adress {
+    padding-top: 9px;
+  }
+
+  .contacts__item-info--email {
+    padding-top: 14px;
+    padding-left: 23px;
+  }
+
+  .contacts__item-title--adress {
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 68px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .contacts__subtitle {
+    display: block;
+    margin-top: 11px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+
+  .contacts__item--adress {
+    order: 2;
+  }
+
+  .contacts__item--email {
+    order: 3;
+  }
+
+  .contacts__item-info--adress {
+    padding-top: 27px;
+    padding-left: 2px;
+    padding-right: 4px;
+  }
+
+  .contacts__item-info--phone {
+    padding-top: 32px;
+    padding-right: 40px;
+  }
+
+  .contacts__item-info--email {
+    padding-top: 34px;
+    padding-left: 40px;
+  }
+
+  .contacts__inner {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .contacts__item--phone {
+    padding-top: 19px;
+    margin-right: 0;
+  }
+
+  .contacts__item-title--email {
+    padding-top: 54px;
+    padding-left: 40px;
+  }
+
+  .contacts__item-title--phone {
+    padding-right: 40px;
+  }
+}

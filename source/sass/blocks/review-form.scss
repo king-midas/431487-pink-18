@@ -5,9 +5,133 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+  padding-top: 46px;
 }
 
 .review-form__title p {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.review-form__hidden-text {
+  display: none;
+}
+
+.review-form__send-button {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 49px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.review-form__purpose-text {
+  display: none;
+}
+
+.review-form__note {
+  margin-top: 38px;
+  font-family: $open-sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.review-form__note-symbol {
+  color: #d22856;
+}
+
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .review-form__title {
+    font-family: $open-sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 92px;
+    margin: 0 auto;
+  }
+
+  .review-form__hidden-text {
+    display: block;
+  }
+
+  .review-form__send-button {
+    order: 7;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    padding-top: 66px;
+    justify-content: space-between;
+  }
+
+  .review-form__note-symbol {
+    text-align: right;
+  }
+
+  .review-form__note {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .review-form__title p {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form__title p {
+    max-width: 758px;
+  }
+
+  .review-form__title {
+    padding-top: 93px;
+  }
+
+  .review-form__hidden-text {
+    display: inline;
+  }
+
+  .review-form__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .review-form__send-button {
+    width: 100%;
+    padding-top: 63px;
+    margin-bottom: 0;
+  }
+
+  .review-form__purpose-text {
+    display: inline-block;
+  }
 }

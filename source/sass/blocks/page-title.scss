@@ -19,3 +19,63 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: 321px) {
+  .page-title {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position-x: 40%;
+    background-position-y: 16%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    min-height: 330px;
+    padding-bottom: 84px;
+    background-position-x: -270px;
+    background-position-y: -111px;
+  }
+
+  .page-title__text {
+    margin-top: 44px;
+    font-family: $open-sans;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 931px) {
+  .page-title {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    padding-bottom: 105px;
+  }
+
+  .page-title--photo {
+    padding-bottom: 105px;
+  }
+
+  .page-title--form {
+    padding-bottom: 104px;
+  }
+
+  .page-title__text {
+    padding-top: 101px;
+  }
+
+  .page-title__text--photo {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}

@@ -1,5 +1,5 @@
 .developer {
-  text-decoration: none;
+  margin-top: 32px;
 }
 
 .developer__text {
@@ -10,4 +10,57 @@
   text-align: left;
   color: #283645;
   text-decoration: none;
+  padding-top: 3px;
+}
+
+.developer__academy-logo {
+  margin-left: 0;
+  width: 27px;
+  height: 34px;
+}
+
+.developer__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 27px;
+  height: 34px;
+
+  & .developer__academy-logo {
+    fill: #d22856;
+  }
+
+  &:hover .developer__academy-logo {
+    fill: #283645;
+  }
+
+  &:active .developer__academy-logo {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .developer {
+    margin-top: 14px;
+    margin-left: 28px;
+  }
+
+  .developer__text {
+    padding-top: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developer {
+    margin-left: 159px;
+    margin-top: 15px;
+  }
+
+  .developer__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
 }

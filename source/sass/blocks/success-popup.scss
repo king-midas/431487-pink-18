@@ -1,0 +1,111 @@
+.success-popup {
+  display: none;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  z-index: 4;
+}
+
+
+.success-popup__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 46px;
+  font-family: $open-sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.success-popup__text {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  padding-top: 26px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: $open-sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #283645;
+}
+
+.success-popup__button {
+  padding-top: 12px;
+  padding-bottom: 14px;
+  padding-left: 66px;
+  padding-right: 67px;
+  margin-top: 50px;
+  margin-right: 18px;
+  margin-left: 18px;
+  margin-bottom: 53px;
+  font-family: $open-sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 3px;
+}
+
+.success-popup__button-wrapper {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .success-popup {
+    width: 460px;
+    margin: 0 auto;
+  }
+
+  .success-popup__title {
+    padding-left: 110px;
+    padding-right: 112px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .success-popup__text {
+    padding-top: 22px;
+    padding-right: 73px;
+    padding-left: 71px;
+    font-size: 18px;
+  }
+
+  .success-popup__button {
+    padding-top: 18px;
+    padding-left: 76px;
+    padding-right: 76px;
+    margin-right: 70px;
+    margin-left: 79px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .success-popup {
+    width: 780px;
+  }
+
+  .success-popup__text {
+    padding-top: 23px;
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-bottom: 39px;
+  }
+
+  .success-popup__button {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 156px;
+    padding-right: 155px;
+    margin-top: 48px;
+    margin-right: 160px;
+    margin-left: 160px;
+  }
+}

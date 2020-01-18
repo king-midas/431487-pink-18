@@ -11,6 +11,7 @@
 }
 
 .reviews__list {
+  margin: 0 auto;
   position: relative;
   width: 280px;
   height: 236px;
@@ -57,14 +58,7 @@
 }
 
 .reviews__client-about {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+  display: none;
 }
 
 .reviews__nav {
@@ -117,19 +111,268 @@
   transform: translate(-300px);
   transition: transform 0.8s ease;
   position: relative;
-  display: block;
+}
+
+.reviews__input-1:checked ~ .reviews__list .reviews__item--2 {
+  transform: translate(318px);
+  transition: transform 0.8s ease;
+  position: absolute;
+}
+
+.reviews__input-1:checked ~ .reviews__list .reviews__item--3 {
+  transform: translate(320px);
+  transition: transform 0.8s ease;
+  position: absolute;
 }
 
 .reviews__input-2:checked ~ .reviews__list .reviews__item--2 {
   transform: translate(-300px);
   transition: transform 0.8s ease;
-  display: block;
   position: relative;
+}
+
+.reviews__input-2:checked ~ .reviews__list .reviews__item--1 {
+  transform: translate(-620px);
+  transition: transform 0.8s ease;
+  position: absolute;
+}
+
+.reviews__input-2:checked ~ .reviews__list .reviews__item--3 {
+  transform: translate(318px);
+  transition: transform 0.8s ease;
+  position: absolute;
 }
 
 .reviews__input-3:checked ~ .reviews__list .reviews__item--3 {
   transform: translate(-300px);
   position: relative;
   transition: transform 0.8s ease;
-  display: block;
+}
+
+.reviews__input-3:checked ~ .reviews__list .reviews__item--2 {
+  transform: translate(-620px);
+  transition: transform 0.8s ease;
+  position: absolute;
+}
+
+.reviews__input-3:checked ~ .reviews__list .reviews__item--1 {
+  transform: translate(-620px);
+  transition: transform 0.8s ease;
+  position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__client-about {
+    margin-top: 3px;
+    display: block;
+    font-family: $open-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #283645;
+  }
+
+  .reviews__client-name {
+    margin-top: 34px;
+    font-family: $open-sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    margin-top: 99px;
+  }
+
+  .reviews__item {
+    display: flex;
+  }
+
+  .reviews__list {
+    width: 620px;
+    height: 285px;
+  }
+
+  .reviews__client {
+    order: 2;
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--1 {
+    transform: translate(-300px);
+    transition: transform 0.8s ease;
+    position: relative;
+    min-width: 620px;
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(320px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(320px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+  }
+
+  .reviews__input-2:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(-300px);
+    transition: transform 0.8s ease;
+    position: relative;
+    min-width: 620px;
+  }
+
+  .reviews__input-2:checked ~ .reviews__list .reviews__item--1 {
+    transform: translate(-940px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+  }
+
+  .reviews__input-2:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(320px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+  }
+
+  .reviews__input-3:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(-300px);
+    position: relative;
+    transition: transform 0.8s ease;
+    min-width: 620px;
+  }
+
+  .reviews__input-3:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(-940px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+  }
+
+  .reviews__input-3:checked ~ .reviews__list .reviews__item--1 {
+    transform: translate(-940px);
+    transition: transform 0.8s ease;
+    position: absolute;
+    min-width: 620px;
+  }
+
+  .reviews__slider-controls {
+    margin-top: 38px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__client-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .reviews__client-about {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .reviews__slider-controls {
+    display: none;
+  }
+
+  .reviews__inner {
+    padding-top: 88px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .reviews__list {
+    min-width: 690px;
+    height: auto;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--3 {
+    transform: translate(650px);
+  }
+
+  .reviews__input-1:checked ~ .reviews__list .reviews__item--2 {
+    transform: translate(650px);
+  }
+
+  .reviews {
+    position: relative;
+    padding-bottom: 8px;
+  }
+
+  .reviews::before {
+    content: "";
+    position: absolute;
+    top: 71px;
+    left: 50%;
+    width: 78.672px;
+    height: 63.789px;
+    transform: translateX(-50%);
+    margin-left: 2px;
+    background: url("../img/icon-quotes.svg") no-repeat top left;
+    background-size: 78.672px 63.789px;
+  }
+
+  .reviews__nav {
+    display: block;
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    border: 0;
+    padding: 0;
+    height: 41px;
+    background-size: 22px 41px;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.3;
+    outline: 0;
+  }
+
+  .reviews__nav--next {
+    top: 125px;
+    right: 0;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat top left;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .reviews__nav--previous {
+    top: 125px;
+    left: 0;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat top left;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
 }
