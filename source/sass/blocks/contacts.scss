@@ -99,6 +99,8 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .contacts__item {
@@ -173,8 +175,11 @@
 
   .contacts__item-info--adress {
     padding-top: 27px;
-    padding-left: 2px;
     padding-right: 4px;
+    padding-left: 0;
+    position: relative;
+    left: -9px;
+    top: -1px;
   }
 
   .contacts__item-info--phone {
@@ -184,7 +189,7 @@
 
   .contacts__item-info--email {
     padding-top: 34px;
-    padding-left: 40px;
+    padding-left: 0;
   }
 
   .contacts__inner {
@@ -201,10 +206,20 @@
 
   .contacts__item-title--email {
     padding-top: 54px;
-    padding-left: 40px;
+    padding-left: 0;
   }
 
   .contacts__item-title--phone {
     padding-right: 40px;
+  }
+
+  .contacts__item-title--adress {
+    position: relative;
+    left: -11px;
+  }
+
+  .contacts__items {
+    width: 920px;
+    margin: 0 auto;
   }
 }

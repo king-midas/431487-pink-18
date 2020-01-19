@@ -3,13 +3,16 @@
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position-x: center;
+  background-position-y: -67px;
   color: #ffffff;
-  padding-top: 66px;
+  padding-top: 0px;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 322px auto;
+    background-position-x: center;
+    background-position-y: -71px;
   }
 }
 
@@ -19,20 +22,18 @@
     background-color: #283645;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position-x: center;
+    background-position-y: -53px;
+    background-size: 790px auto;
     color: #ffffff;
-    padding-top: 66px;
+    padding-top: 0;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 849px auto;
+      background-size: 777px auto;
+      background-position-y: -48px;
     }
   }
-}
-
-.download-app--short {
-  padding-top: 0;
-  background-position: center -69px;
 }
 
 .download-app__wrapper::before {
@@ -88,7 +89,9 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: -270px -112px;
+    background-size: 1200px auto;
+    background-position-x: center;
+    background-position-y: -110px;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dppx) {
@@ -143,12 +146,12 @@
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-size: cover;
     height: 854px;
-    background-position-x: 50%;
+    background-position-x: center;
 
     @media (min-resolution: $retina-dppx) {
       background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
       background-size: 2560px auto;
-      background-position-x: -798px;
+      background-position-x: center;
     }
   }
 
