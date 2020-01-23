@@ -12,9 +12,36 @@
   cursor: pointer;
 }
 
-.main-nav__icon-cross,
 .main-nav__icon-burger {
+  position: absolute;
+  top: -2px;
+  right: 1px;
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #d22856;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__icon-burger--hide {
   display: none;
+}
+
+.main-nav__icon-burger--show {
+  display: block;
+}
+
+.main-nav__icon-cross--hide {
+  display: none;
+}
+
+.main-nav__icon-cross--show {
+  display: block;
 }
 
 .main-nav--opened .main-nav__icon-cross {
@@ -25,16 +52,21 @@
   left: 26px;
 }
 
-.main-nav--closed .main-nav__icon-burger {
+.main-nav__list {
   display: block;
-  position: absolute;
-  content: "";
 }
 
-.main-nav--closed .main-nav__list {
+.main-nav__list--closed {
   display: none;
 }
 
+.main-nav__list--opened {
+  display: block;
+}
+
+.main-nav__toggle {
+  display: block;
+}
 .main-nav__icon-cross {
   fill: #ffffff;
 }

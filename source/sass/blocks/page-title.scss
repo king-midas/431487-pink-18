@@ -26,6 +26,12 @@
   padding: 0;
 }
 
+.page-title--short {
+  min-height: 237px;
+  padding-top: 94px;
+  background-position-y: 0;
+}
+
 @media (min-width: 321px) {
   .page-title {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
@@ -58,6 +64,12 @@
     }
   }
 
+  .page-title--short {
+    min-height: 440px;
+    padding-top: 137px;
+    background-position-y: 0;
+  }
+
   .page-title__text {
     margin-top: 44px;
     font-family: $open-sans;
@@ -85,6 +97,8 @@
 
   .page-title--photo {
     padding-bottom: 105px;
+    padding-top: 29px;
+    min-height: 394px;
   }
 
   .page-title--form {
