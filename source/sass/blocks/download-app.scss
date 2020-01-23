@@ -16,6 +16,11 @@
   }
 }
 
+.download-app--short {
+  padding-top: 66px;
+  background-position-y: 0;
+}
+
 @media (min-width: 321px) {
   .download-app {
     position: relative;
@@ -71,6 +76,10 @@
   margin: 0;
 }
 
+.download-app__title--short {
+  top: 87px;
+}
+
 @media (min-width: $tablet-width) {
   .download-app__title {
     font-size: 40px;
@@ -98,6 +107,11 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
     }
+  }
+
+  .download-app--short {
+    padding-top: 109px;
+    background-position-y: 0;
   }
 
   .download-app__wrapper::before {
@@ -128,6 +142,10 @@
   .download-app__content {
     position: relative;
     z-index: 2;
+  }
+
+  .download-app__title--short {
+    top: 0;
   }
 }
 

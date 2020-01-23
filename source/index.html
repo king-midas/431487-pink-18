@@ -24,12 +24,14 @@
           <use xlink:href="img/sprite.svg#logo-pink__header--desktop"></use>
         </svg>
       </a>
-      <nav class="main-nav main-nav--opened" aria-label="Основное меню">
+      <nav class="main-nav" aria-label="Основное меню">
         <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
-          <svg class="main-nav__icon-cross" width="23" height="23">
+          <svg class="main-nav__icon-cross main-nav__icon-cross--hide" width="23" height="23">
             <use xlink:href="img/sprite.svg#main-nav__icon-cross"></use>
           </svg>
-          <img class="main-nav__icon-burger" src="img/icon-menu-burger.svg" width="50" height="">
+          <svg class="main-nav__icon-burger" width="50" height="24">
+            <use xlink:href="img/sprite.svg#main-nav__icon-burger-svg"></use>
+          </svg>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -342,8 +344,10 @@
       </div>
       <div class="contacts-map">
         <div class="contacts-map__inner">
-          <div class="contacts-map__content">
+          <div class="contacts-map__content" id="map">
 
+
+            <div class="contacts-map__map-pin"></div>
           </div>
         </div>
       </div>
@@ -391,6 +395,11 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8f8d38b8-684f-4cfd-a735-19bb99801ce5&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="js/map.js" type="text/javascript"></script>
+
 </body>
 
 </html>

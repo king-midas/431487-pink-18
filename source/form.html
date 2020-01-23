@@ -12,7 +12,7 @@
   <header class="page-header page-header--full">
 
     <div class="page-header__wrapper">
-      <a class="page-header__logo-link" href="index.html">
+      <a class="page-header__logo-link" href="#" aria-label="Логотип Pink">
         <svg class="page-header__logo-image--mobile" width="74" height="22">
           <use xlink:href="../img/sprite.svg#logo-pink__header--mobile"></use>
         </svg>
@@ -23,12 +23,14 @@
           <use xlink:href="img/sprite.svg#logo-pink__header--desktop"></use>
         </svg>
       </a>
-      <nav class="main-nav main-nav--opened" aria-label="Основное меню">
+      <nav class="main-nav" aria-label="Основное меню">
         <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
-          <svg class="main-nav__icon-cross" width="23" height="23">
+          <svg class="main-nav__icon-cross main-nav__icon-cross--hide" width="23" height="23">
             <use xlink:href="img/sprite.svg#main-nav__icon-cross"></use>
           </svg>
-          <img class="main-nav__icon-burger" src="img/icon-menu-burger.svg" width="50" height="">
+          <svg class="main-nav__icon-burger" width="50" height="24">
+            <use xlink:href="img/sprite.svg#main-nav__icon-burger-svg"></use>
+          </svg>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -225,8 +227,6 @@
             — обязательные <span class="review-form__purpose-text">для заполнения</span> поля
           </span>
         </div>
-        <!-- Здесь будет поппапп успешной отправки формы -->
-        <!-- здесь будет поппапп ошибки отправки формы -->
       </form>
 </div>
   </main>
@@ -295,5 +295,7 @@
     </div>
 
   </aticle>
+
+  <script src="js/form.js" type="text/javascript"></script>
   </body>
   </html>
