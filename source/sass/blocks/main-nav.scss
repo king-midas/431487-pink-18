@@ -1,4 +1,5 @@
 .main-nav__toggle {
+  display: block;
   position: absolute;
   top: 22px;
   right: 19px;
@@ -64,9 +65,6 @@
   display: block;
 }
 
-.main-nav__toggle {
-  display: block;
-}
 .main-nav__icon-cross {
   fill: #ffffff;
 }

@@ -109,11 +109,10 @@
     }
   }
 
-
-.download-app--short {
-  padding-top: 109px;
-  background-position-y: 0;
-}
+  .download-app--short {
+    padding-top: 109px;
+    background-position-y: 0;
+  }
 
   .download-app__wrapper::before {
     position: absolute;
@@ -146,7 +145,7 @@
   }
 
   .download-app__title--short {
-    top: 0px;
+    top: 0;
   }
 }
 
