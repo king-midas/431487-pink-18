@@ -1,5 +1,5 @@
 .main-nav__toggle {
-  display: block;
+  display: none;
   position: absolute;
   top: 22px;
   right: 19px;
@@ -11,6 +11,10 @@
   border: 0;
   outline: 0;
   cursor: pointer;
+}
+
+.main-nav__toggle--show {
+  display: block;
 }
 
 .main-nav__icon-burger {

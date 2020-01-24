@@ -326,7 +326,7 @@
     height: 63.789px;
     transform: translateX(-50%);
     margin-left: 2px;
-    background: url("../img/icon-quotes.svg") no-repeat top left;
+    background: url("../img/quotes.svg") no-repeat top left;
     background-size: 78.672px 63.789px;
   }
 
@@ -349,7 +349,7 @@
   .reviews__nav--next {
     top: 125px;
     right: 0;
-    background: url("../img/icon-review-arrow-right.svg") no-repeat top left;
+    background: url("../img/review-arrow-right.svg") no-repeat top left;
     opacity: 0.3;
 
     &:hover {
@@ -364,7 +364,7 @@
   .reviews__nav--previous {
     top: 125px;
     left: 0;
-    background: url("../img/icon-review-arrow-left.svg") no-repeat top left;
+    background: url("../img/review-arrow-left.svg") no-repeat top left;
     opacity: 0.3;
 
     &:hover {

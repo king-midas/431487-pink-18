@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
   <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png">
 </head>
@@ -14,24 +14,24 @@
   <header class="page-header page-header--full">
 
     <div class="page-header__wrapper">
-      <a class="page-header__logo-link" href="#" aria-label="Логотип Pink">
+      <a class="page-header__logo-link" href="index.html" aria-label="Логотип Pink">
         <svg class="page-header__logo-image--mobile" width="74" height="22">
-          <use xlink:href="../img/sprite.svg#logo-pink__header--mobile"></use>
+          <use xlink:href="../img/sprite.svg#icon-logo-pink-white-mobile"></use>
         </svg>
         <svg class="page-header__logo-image--tablet" width="146" height="40">
-          <use xlink:href="img/sprite.svg#logo-pink__header--tablet"></use>
+          <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
         </svg>
         <svg class="page-header__logo-image--desktop" width="146" height="40">
-          <use xlink:href="img/sprite.svg#logo-pink__header--desktop"></use>
+          <use xlink:href="img/sprite.svg#icon-logo-pink-desktop"></use>
         </svg>
       </a>
       <nav class="main-nav" aria-label="Основное меню">
         <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню">
           <svg class="main-nav__icon-cross main-nav__icon-cross--hide" width="23" height="23">
-            <use xlink:href="img/sprite.svg#main-nav__icon-cross"></use>
+            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
           </svg>
           <svg class="main-nav__icon-burger" width="50" height="24">
-            <use xlink:href="img/sprite.svg#main-nav__icon-burger-svg"></use>
+            <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
           </svg>
         </button>
         <ul class="main-nav__list site-list">
@@ -315,9 +315,9 @@
         <div class="upload-form__wrapper">
           <fieldset class="upload-form__image-select">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
+              <source type="image/webp" media="(min-width: 960px)"
                 srcset="img/webp/photo-road-desktop@1x.webp 1x, img/webp/photo-road-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
+              <source type="image/webp" media="(min-width: 660px)"
                 srcset="img/webp/photo-road-tablet@1x.webp 1x, img/webp/photo-road-tablet@2x.webp 2x">
               <source type="image/webp"
                 srcset="img/webp/photo-road-mobile@1x.webp 1x, img/webp/photo-road-mobile@2x.webp 2x">
@@ -343,7 +343,7 @@
 
                 <div class="upload-form__toggle-icon">
                   <svg class="upload-form__crop-tool" width="48" height="48">
-                    <use xlink:href="img/sprite.svg#upload-form__crop-tool-svg"></use>
+                    <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
                   </svg>
                 </div>
 
@@ -354,7 +354,7 @@
               <label class="upload-form__filter-toggle upload-form__filter-toggle-2" for="upload-filter-2">
                 <div class="upload-form__toggle-icon">
                   <svg class="upload-form__fill-tool" width="48" height="48">
-                    <use xlink:href="img/sprite.svg#upload-form__fill-tool-svg"></use>
+                    <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
                   </svg>
                 </div>
 
@@ -365,7 +365,7 @@
               <label class="upload-form__filter-toggle upload-form__filter-toggle-3" for="upload-filter-3">
                 <div class="upload-form__toggle-icon">
                   <svg class="upload-form__contrast-tool" width="31" height="31">
-                    <use xlink:href="img/sprite.svg#upload-form__contrast-tool-svg"></use>
+                    <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                   </svg>
                 </div>
                 <input class="range-controls__filter-input range-controls__filter-input-3" type="range"
@@ -386,31 +386,31 @@
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__logo-image--tablet" width="146" height="40">
-          <use xlink:href="img/sprite.svg#logo-pink__footer--tablet"></use>
+          <use xlink:href="img/sprite.svg#icon-logo-pinky-tablet"></use>
         </svg>
         <svg class="page-footer__logo-image--desktop" width="146" height="40">
-          <use xlink:href="img/sprite.svg#logo-pink__footer--desktop"></use>
+          <use xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
         </svg>
       </a>
       <ul class="social-links social-links__list">
         <li>
           <a class="social-links__link social-links__link--twitter" href="#twitter" title="twitter">
             <svg class="social-links__icon social-links__icon--twitter" width="17" height="14">
-              <use xlink:href="img/sprite.svg#social-links__twitter-svg"></use>
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="social-links__link social-links__link--facebook" href="#facebook" title="facebook">
             <svg class="social-links__icon social-links__icon--facebook" width="8" height="18">
-              <use xlink:href="img/sprite.svg#social-links__facebook-svg"></use>
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="social-links__link social-list__link--youtube" href="#youtube">
             <svg class="social-links__icon social-links__icon--youtube" width="14" height="13">
-              <use xlink:href="img/sprite.svg#social-links__youtube-svg"></use>
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -419,13 +419,13 @@
         <span class="developer__text">Разработано</span>
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <svg class="developer__academy-logo" width="27" height="34">
-            <use xlink:href="img/sprite.svg#developer__academy-logo-icon"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/photo.js" type="text/javascript"></script>
+  <script src="js/photo.min.js" type="text/javascript"></script>
 </body>
 
 </html>

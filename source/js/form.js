@@ -22,6 +22,8 @@ navMenu.classList.add("main-nav__list--closed");
 pageHeader.classList.remove("page-header--full");
 pageHeaderLink.classList.add("page-header__logo-link--short");
 pageTitle.classList.add("page-title--short");
+showButton.classList.add("main-nav__toggle--show");
+
 showButton.addEventListener("click", function(evt){
   evt.preventDefault();
   pageHeaderLink.classList.toggle("page-header__logo-link--short");
