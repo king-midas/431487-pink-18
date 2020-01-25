@@ -20,6 +20,7 @@ navMenu.classList.add("main-nav__list--closed");
 pageHeader.classList.remove("page-header--full");
 downlaodAppTitle.classList.add("download-app__title--short");
 pageHeaderLink.classList.add("page-header__logo-link--short");
+showButton.classList.add("main-nav__toggle--show");
 
 showButton.addEventListener("click", function(evt){
   evt.preventDefault();
@@ -32,22 +33,3 @@ showButton.addEventListener("click", function(evt){
   burgerPic.classList.toggle("main-nav__icon-burger--hide");
   pageHeader.classList.toggle("page-header--full");
 });
-
-
-
-// var showButton = document.querySelector(".js-main-nav__toggle");
-
-// var navMenu = document.querySelector(".main-nav__wrapper");
-
-// var burgerPicClose = document.querySelector(".main-nav__burger-icon--closed");
-
-// var burgerPicBurger = document.querySelector(".main-nav__burger-icon--open");
-
-// navMenu.classList.remove("js-main-nav__wrapper--opened");
-
-// showButton.addEventListener("click", function(evt){
-//   evt.preventDefault();
-//   navMenu.classList.toggle("js-main-nav--open");
-//   burgerPicClose.classList.toggle("js-main-nav__icon-show");
-//   burgerPicBurger.classList.toggle("js-main-nav__icon-hide");
-// });

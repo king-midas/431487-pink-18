@@ -6,7 +6,7 @@ ymaps.ready(init);
             });
             var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
               iconLayout: 'default#image',
-              iconImageHref: '../img/icon-map-marker.svg',
+              iconImageHref: '../img/map-marker.svg',
               iconImageSize: [36, 36],
               iconImageOffset: [-3, -42]
           });

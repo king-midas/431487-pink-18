@@ -117,11 +117,33 @@
   border: 2px solid #d22856;
   color: #d22856;
   margin-bottom: 14px;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #d22856;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .upload-form__button-reset {
-  color: rgba(40, 54, 69, 0.1);
-  border: 2px solid rgba(40, 54, 69, 0.1);
+  color: #283645;
+  border: 2px solid #283645;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #ffffff;
+    border: 2px solid #283645;
+    background-color: #283645;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -190,18 +212,24 @@
     width: 22px;
     height: 22px;
     padding-top: 1px;
+    fill: #d22856;
+    opacity: 1;
   }
 
   .upload-form__fill-tool {
     width: 24px;
     height: 25px;
     padding-top: 0;
+    fill: #d22856;
+    opacity: 1;
   }
 
   .upload-form__contrast-tool {
     width: 16px;
     height: 16px;
     padding-top: 0;
+    fill: #d22856;
+    opacity: 1;
   }
 
   .upload-form__toggle-icon {
@@ -265,6 +293,8 @@
     left: 1px;
     width: 46px;
     height: 47px;
+    fill: #d22856;
+    opacity: 1;
   }
 
   .upload-form__fill-tool {
@@ -273,6 +303,8 @@
     width: 50px;
     height: 47px;
     padding-right: 45px;
+    fill: #d22856;
+    opacity: 1;
   }
 
   .upload-form__contrast-tool {
@@ -280,6 +312,8 @@
     top: -8px;
     width: 32px;
     height: 32px;
+    fill: #d22856;
+    opacity: 1;
   }
 
   .upload-form__toggle-icon svg {
@@ -298,12 +332,33 @@
     padding-top: 11px;
     margin-right: 44px;
     margin-bottom: 0;
+
+    &:hover {
+      background-color: #d22856;
+      color: #ffffff;
+    }
+
+    &:active {
+      background-color: #d22856;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .upload-form__button-reset {
     padding-right: 50px;
     padding-left: 55px;
     padding-top: 13px;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: #ffffff;
+      border: 2px solid #283645;
+      background-color: #283645;
+      opacity: 0.3;
+    }
   }
 
   .upload-form__filter-controls {
