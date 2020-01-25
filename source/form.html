@@ -17,9 +17,9 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header page-header--full">
+  <header class="page-header page-header--full" aria-label=" Шапка сайта pink">
 
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper" aria-label="Шапка сайта pink">
       <a class="page-header__logo-link" href="index.html" aria-label="Логотип Pink">
         <svg class="page-header__logo-image--mobile" width="74" height="22">
           <use xlink:href="../img/sprite.svg#icon-logo-pink-white-mobile"></use>
@@ -40,15 +40,15 @@
             <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list" aria-label="Список страниц главного меню сайта">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html" aria-label="Перейти на главную страницу">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html" aria-label="Перейти на страницу фотографии">Фотографии</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Конкурс</a>
+            <a class="site-list__link" href="#" aria-label="Сейчас мы на странице конкурса">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
@@ -58,7 +58,7 @@
     </div>
   </header>
 
-  <main>
+  <main aria-label="Основное содержание страницы">
     <div class="page-title page-title--form">
       <h1 class="page-title__text page-title__text--form">
         Конкурс на самое безбашенное путешествие с Пинк
@@ -66,7 +66,7 @@
     </div>
 
       <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="review-form__title">
+        <div class="review-form__title" aria-label="условия конкурса">
           <p>
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             <span class="review-form__hidden-text">
@@ -74,8 +74,8 @@
             </span>
           </p>
         </div>
-        <div class="review-form__wrapper">
-        <fieldset class="name-fieldset">
+        <div class="review-form__wrapper" aria-label="форма для заполнения">
+        <fieldset class="name-fieldset" aria-label="Здесь нужно заполнить ваши Фамилию, Имя и Отчество">
           <label class="name-fieldset__item">
             <span class="name-fieldset__field-name">
               Фамилия:
@@ -104,7 +104,7 @@
 
           </label>
         </fieldset>
-        <fieldset class="achievements-fieldset">
+        <fieldset class="achievements-fieldset" aria-label="Здесь нужно отметить ваши достижения в путешествии">
           <h2 class="achievements-fieldset__title">
             Ваши безбашенные достижения в путешествии
           </h2>
@@ -171,7 +171,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="contacts-fieldset">
+        <fieldset class="contacts-fieldset" aria-label="Здесь нужно заполнить ваши контактные данные">
           <h2 class="contacts-fieldset__title">
             Контактная информация
           </h2>
@@ -198,7 +198,7 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="application-fieldset">
+        <fieldset class="application-fieldset" aria-label="Здесь нужно указать на какой платформе вы используете приложение Pink">
           <h2 class="application-fieldset__title">
             С каким приложением путешествовали?
           </h2>
@@ -220,7 +220,7 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="review-fieldset">
+        <fieldset class="review-fieldset" aria-label="Здесь вы можете оставить отзыв о приложении Pink">
           <h2 class="review-fieldset__title">
             Опишите свои эмоции
           </h2>
@@ -239,15 +239,13 @@
 </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer" aria-label="Подвал сайта">
     <div class="page-footer__container">
-      <a class="page-footer__logo" href="index.html">
+      <a class="page-footer__logo" href="index.html" aria-label="Логотип Pink, перейти на главную страницу">
         <svg class="page-footer__logo-image--tablet" width="146" height="40"><use xlink:href="img/sprite.svg#icon-logo-pinky-tablet"></use>
         </svg>
         <svg class="page-footer__logo-image--desktop" width="146" height="40"><use xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
         </svg>
-
-
       </a>
       <ul class="social-links social-links__list">
         <li>
@@ -269,9 +267,9 @@
           </a>
         </li>
       </ul>
-      <div class="developer">
+      <div class="developer" aria-label="Этот сайт разработан на интенсиве HTML/CSS уровень 2">
         <span class="developer__text">Разработано</span>
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Научиться делать такие сайты вы можете здесь - перейти на сайт HTML Academy">
           <svg class="developer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>

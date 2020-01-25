@@ -17,9 +17,9 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header page-header--full">
+  <header class="page-header page-header--full" aria-label=" Шапка сайта pink">
 
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper" aria-label="Шапка сайта pink">
       <a class="page-header__logo-link" href="#" aria-label="Логотип Pink">
         <svg class="page-header__logo-image--mobile" width="74" height="22">
           <use xlink:href="../img/sprite.svg#icon-logo-pink-white-mobile"></use>
@@ -40,25 +40,25 @@
             <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list" aria-label="Список страниц главного меню сайта">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="#" aria-label="Сейчас мы на главной странице">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html" aria-label="Перейти на страницу фотографии">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html" aria-label="Перейти на страницу конкурс">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank" aria-label="перейти на страницу HTML академии">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
-    <section class="download-app download-app--short">
+  <main aria-label="Основное содержание сайта pink">
+    <section class="download-app download-app--short" aria-label="Эта секция поможет скачать приложение Pink">
 <div class="download-app__wrapper">
   <div class="download-app__inner">
           <p class="download-app__title">Взгляните на&nbsp;жизнь<br>иначе!</p>
@@ -68,7 +68,7 @@
               <div class="downloads__inner">
                 <a class="btn downloads__download-btn" href="https://apps.apple.com/ru/genre/ios/id36"
                   target="_blank">Скачать приложение</a>
-                <div class="downloads__platforms">
+                <div class="downloads__platforms" aria-label="Выбираем платформу для скачивания приложения Pink">
                   <a class="downloads__platform downloads__platform--apple" href="https://apps.apple.com/ru/genre/ios/id36"
                     target="_blank" title="Скачать приложение Pink для iPhone и iPad">
                     <svg class="downloads__apple-icon" width="47" height="56"><use xlink:href="img/sprite.svg#icon-logo-apple"></use>
@@ -97,7 +97,7 @@
   </div>
 </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" aria-label="Здесь можно узнать о преимуществах приложения Pink">
       <div class="advantages__title-wrapper">
         <h2 class="advantages__title">
           Устали от серости мегаполиса?
@@ -108,7 +108,7 @@
       </div>
       <div class="advantages__wrapper">
         <div class="advantages__inner">
-          <ul class="advantages__list">
+          <ul class="advantages__list" aria-label="Список преимуществ приложения Pink">
             <li class="advantages__item advantages__item--mood">
               <h3 class="advantages__name">Поднимает настроение</h3>
               <p class="advantages__text">
@@ -131,7 +131,7 @@
         </div>
       </div>
     </section>
-    <section class="research">
+    <section class="research" aria-label="Здесь можно узнать о положительном эффекте от приложения Pink">
       <div class="research__container">
         <div class="research__item">
           <div class="research__item-image">
@@ -151,37 +151,37 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" aria-label="Здесь можно прочитать отзывы пользователей приложения  Pink">
       <h2 class="reviews__title  visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__inner">
-        <input class="reviews__input-1" type="radio" name="toggle-1" id="btn-1" checked>
-        <input class="reviews__input-2" type="radio" name="toggle-1" id="btn-2">
-        <input class="reviews__input-3" type="radio" name="toggle-1" id="btn-3">
+        <input class="reviews__input-1" type="radio" name="toggle-1" id="btn-1" aria-label="перейти к отзыву номер 1" checked>
+        <input class="reviews__input-2" type="radio" name="toggle-1" id="btn-2" aria-label="перейти к отзыву номер 2">
+        <input class="reviews__input-3" type="radio" name="toggle-1" id="btn-3" aria-label="перейти к отзыву номер 3">
         <div class="reviews__list">
-          <blockquote class="reviews__item reviews__item--1">
+          <blockquote class="reviews__item reviews__item--1" aria-label="Отзыв номер 1">
             <div class="reviews__client">
-              <h3 class="reviews__client-name">Николай Петров</h3>
-              <div class="reviews__client-about">25 лет, водитель трамвая</div>
+              <h3 class="reviews__client-name" aria-label="Имя пользователя">Николай Петров</h3>
+              <div class="reviews__client-about" aria-label="О пользователе">25 лет, водитель трамвая</div>
             </div>
-            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            <p class="reviews__text" aria-label="Текст отзыва">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
-          <blockquote class="reviews__item reviews__item--2">
+          <blockquote class="reviews__item reviews__item--2" aria-label="Отзыв номер 2">
             <div class="reviews__client">
-              <h3 class="reviews__client-name">Николай Петров</h3>
-              <div class="reviews__client-about">25 лет, водитель трамвая</div>
+              <h3 class="reviews__client-name" aria-label="Имя пользователя">Николай Петров</h3>
+              <div class="reviews__client-about" aria-label="О пользователе">25 лет, водитель трамвая</div>
             </div>
-            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            <p class="reviews__text" aria-label="Текст отзыва">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
-          <blockquote class="reviews__item reviews__item--3">
+          <blockquote class="reviews__item reviews__item--3" aria-label="Отзыв номер 3">
             <div class="reviews__client">
-              <h3 class="reviews__client-name">Николай Петров</h3>
-              <div class="reviews__client-about">25 лет, водитель трамвая</div>
+              <h3 class="reviews__client-name" aria-label="Имя пользователя">Николай Петров</h3>
+              <div class="reviews__client-about" aria-label="О пользователе">25 лет, водитель трамвая</div>
             </div>
-            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            <p class="reviews__text" aria-label="Текст отзыва">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
@@ -190,9 +190,9 @@
         </div>
 
         <div class="reviews__slider-controls slider__controls">
-          <label class="reviews__slider-label-1" for="btn-1"></label>
-          <label class="reviews__slider-label-2" for="btn-2"></label>
-          <label class="reviews__slider-label-3" for="btn-3"></label>
+          <label class="reviews__slider-label-1" for="btn-1" aria-label="перейти к отзыву номер 1"></label>
+          <label class="reviews__slider-label-2" for="btn-2" aria-label="перейти к отзыву номер 2"></label>
+          <label class="reviews__slider-label-3" for="btn-3" aria-label="перейти к отзыву номер 3"></label>
         </div>
       </div>
     </section>
@@ -207,20 +207,20 @@
             <tbody>
               <tr>
                 <th class="price-table__hidden-cell"></th>
-                <th class="price-table__title">
+                <th class="price-table__title" aria-label="Тариф">
                   База
                   <br>
-                  <span class="price-table__price">1,99 USD</span>
+                  <span class="price-table__price" aria-label="Цена">1,99 USD</span>
                 </th>
-                <th class="price-table__title price-table__title--hit-logo">
+                <th class="price-table__title price-table__title--hit-logo" aria-label="Тариф">
                   Стандарт
                   <br>
-                  <span class="price-table__price">3,99 USD</span>
+                  <span class="price-table__price" aria-label="Цена">3,99 USD</span>
                 </th>
-                <th class="price-table__title">
+                <th class="price-table__title" aria-label="Тариф">
                   Анлим
                   <br>
-                  <span class="price-table__price">9,99 USD</span>
+                  <span class="price-table__price" aria-label="Цена">9,99 USD</span>
                 </th>
               </tr>
               <tr>
@@ -228,26 +228,26 @@
                   Розовый фильтр
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">
+                  <span class="price-table__hidden-text" aria-label="Услуга">
                     Розовый фильтр
                   </span>
-                  <div class="price-table__check-icon--yes">
+                  <div class="price-table__check-icon--yes" aria-label="Наличие">
                     есть
                   </div>
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">
+                  <span class="price-table__hidden-text" aria-label="Услуга">
                     Розовый фильтр
                   </span>
-                  <div class="price-table__check-icon--yes">
+                  <div class="price-table__check-icon--yes" aria-label="Наличие">
                     есть
                   </div>
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">
+                  <span class="price-table__hidden-text" aria-label="Услуга">
                     Розовый фильтр
                   </span>
-                  <div class="price-table__check-icon--yes">
+                  <div class="price-table__check-icon--yes" aria-label="Наличие">
                     есть
                   </div>
                 </td>
@@ -255,20 +255,20 @@
               <tr>
                 <td class="price-table__hidden-cell">Смайлики</td>
                 <td>
-                  <span class="price-table__hidden-text">Смайлики</span>
-                  <div class="price-table__check-icon--no">
+                  <span class="price-table__hidden-text" aria-label="Услуга">Смайлики</span>
+                  <div class="price-table__check-icon--no" aria-label="Наличие">
                     нет
                   </div>
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">Смайлики</span>
-                  <div class="price-table__check-icon--yes">
+                  <span class="price-table__hidden-text" aria-label="Услуга">Смайлики</span>
+                  <div class="price-table__check-icon--yes" aria-label="Наличие">
                     есть
                   </div>
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">Смайлики</span>
-                  <div class="price-table__check-icon--yes">
+                  <span class="price-table__hidden-text" aria-label="Услуга">Смайлики</span>
+                  <div class="price-table__check-icon--yes" aria-label="Наличие">
                     есть
                   </div>
                 </td>
@@ -278,26 +278,26 @@
                   Комментарии
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">
+                  <span class="price-table__hidden-text" aria-label="Услуга">
                     Комментарии
                   </span>
-                  <div class="price-table__check-icon--no">
+                  <div class="price-table__check-icon--no" aria-label="Наличие">
                     нет
                   </div>
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">
+                  <span class="price-table__hidden-text" aria-label="Услуга">
                     Комментарии
                   </span>
-                  <div class="price-table__check-icon--no">
+                  <div class="price-table__check-icon--no" aria-label="Наличие">
                     нет
                   </div>
                 </td>
                 <td>
-                  <span class="price-table__hidden-text">
+                  <span class="price-table__hidden-text" aria-label="Услуга">
                     Комментарии
                   </span>
-                  <div class="price-table__check-icon--yes">
+                  <div class="price-table__check-icon--yes" aria-label="Наличие">
                     есть
                   </div>
                 </td>
@@ -315,7 +315,7 @@
 
 
     </section>
-    <section class="contacts">
+    <section class="contacts" aria-label="Здесь вы можете узнать как с нами связаться">
       <div class="contacts__title-wrapper">
         <h2 class="contacts__title">
           Остались вопросы?
@@ -330,26 +330,26 @@
             <h3 class="contacts__item-title contacts__item-title--phone">
               Звоните:
             </h3>
-            <a class="contacts__item-info contacts__item-info--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <a class="contacts__item-info contacts__item-info--phone" href="tel:+78125556666" aria-label="Наш телефон">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__item contacts__item--email">
             <h3 class="contacts__item-title contacts__item-title--email">
               Пишите:
             </h3>
             <a class="contacts__item-info contacts__item-info--email"
-              href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              href="mailto:mail@htmlacademy.ru" aria-label="Наша электронная почта">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__item contacts__item--adress">
             <h3 class="contacts__item-title contacts__item-title--adress">
               Приезжайте в гости:
             </h3>
-            <address class="contacts__item-info contacts__item-info--adress">
+            <address class="contacts__item-info contacts__item-info--adress" aria-label="Наш адрес">
               ул. Большая Конюшенная, 19/8
             </address>
           </div>
         </div>
       </div>
-      <div class="contacts-map">
+      <div class="contacts-map" aria-label="Здесь наше расположение на карте">
         <div class="contacts-map__inner">
           <div class="contacts-map__content" id="map">
 
@@ -363,9 +363,9 @@
   </main>
 
 
-  <footer class="page-footer page-footer--index-page">
+  <footer class="page-footer page-footer--index-page" aria-label="Это подвал сайта pink">
     <div class="page-footer__container">
-      <a class="page-footer__logo" href="#">
+      <a class="page-footer__logo" href="#" aria-label="Логотип Pink">
         <svg class="page-footer__logo-image--tablet" width="146" height="40"><use xlink:href="img/sprite.svg#icon-logo-pinky-tablet"></use>
         </svg>
         <svg class="page-footer__logo-image--desktop" width="146" height="40"><use xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
@@ -373,7 +373,7 @@
 
 
       </a>
-      <ul class="social-links social-links__list">
+      <ul class="social-links social-links__list" aria-label="Список наших социальных сетей">
         <li>
           <a class="social-links__link social-links__link--twitter" href="#twitter" title="twitter">
             <svg class="social-links__icon social-links__icon--twitter" width="17" height="14"><use xlink:href="img/sprite.svg#icon-twitter"></use>
@@ -393,9 +393,9 @@
           </a>
         </li>
       </ul>
-      <div class="developer">
+      <div class="developer" aria-label="Этот сайт разработан на интенсиве HTML/CSS уровень 2">
         <span class="developer__text">Разработано</span>
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Научиться делать такие сайты вы можете здесь - перейти на сайт HTML Academy">
           <svg class="developer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>
