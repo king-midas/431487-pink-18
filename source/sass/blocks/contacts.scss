@@ -178,8 +178,8 @@
     padding-right: 4px;
     padding-left: 0;
     position: relative;
-    left: -9px;
-    top: -1px;
+    left: 0;
+    top: 0;
   }
 
   .contacts__item-info--phone {
@@ -189,7 +189,7 @@
 
   .contacts__item-info--email {
     padding-top: 34px;
-    padding-left: 0;
+    padding-left: 38px;
   }
 
   .contacts__inner {
@@ -206,20 +206,20 @@
 
   .contacts__item-title--email {
     padding-top: 54px;
-    padding-left: 0;
+    padding-left: 38px;
   }
 
   .contacts__item-title--phone {
-    padding-right: 40px;
+    padding-right: 42px;
   }
 
   .contacts__item-title--adress {
     position: relative;
-    left: -11px;
+    left: 0;
   }
 
   .contacts__items {
-    width: 920px;
+    width: 900px;
     margin: 0 auto;
   }
 }

@@ -103,4 +103,9 @@
     margin-left: 40px;
     margin-right: 40px;
   }
+
+  .site-list__item:last-child {
+    margin-right: 0;
+    margin-left: 39px;
+  }
 }

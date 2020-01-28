@@ -83,7 +83,7 @@
 
   .range-controls__filter-input-3 {
     display: block;
-    margin-top: 7px;
+    margin-top: 5px;
   }
 }
 
@@ -96,5 +96,9 @@
 @media (min-width: $desktop-width) {
   .range-controls__filter-input {
     width: 288px;
+  }
+
+  .range-controls__filter-input-3 {
+    margin-top: 7px;
   }
 }

@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "del": "^5.1.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "svgxuse": "^1.2.6"
   }
 }

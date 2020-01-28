@@ -54,7 +54,7 @@
   border: 2px solid#e5e5e5;
   background: #ffffff;
   padding-top: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-right: 17px;
   padding-left: 20px;
 }
@@ -89,56 +89,39 @@
   color: #ffffff;
 }
 
-.price-table__check-icon--yes,
-.price-table__check-icon--no {
-  float: right;
-  position: relative;
-  width: 35px;
-  height: 35px;
-  font-size: 0;
-  top: -3px;
-}
-
-.price-table__check-icon--no::after,
-.price-table__check-icon--no::before,
-.price-table__check-icon--yes::after,
-.price-table__check-icon--yes::before {
-  content: "";
+.price-table__check-icon--yes {
   position: absolute;
-  height: 3px;
-  border-radius: 5px;
-}
-
-.price-table__check-icon--yes::before {
-  top: 63%;
-  left: -1%;
-  width: 15px;
-  background-color: #3dc644;
-  transform: rotate(45deg);
-}
-
-.price-table__check-icon--yes::after {
-  top: 45%;
-  left: 18%;
   width: 31px;
-  background-color: #3dc644;
-  transform: rotate(-47deg);
+  height: 21px;
+  font-size: 0;
+  top: 19px;
+  left: 226px;
+  z-index: 1;
 }
 
-.price-table__check-icon--no::after,
-.price-table__check-icon--no::before {
-  top: 45%;
-  left: -5%;
-  width: 35px;
-  background-color: #f25b26;
-  transform: rotate(45deg);
+.price-table__check-icon--no {
+  position: absolute;
+  top: 15px;
+  left: 228px;
+  font-size: 0;
+  width: 27px;
+  height: 26px;
+  fill: #f25b26;
+  z-index: 1;
 }
 
-.price-table__check-icon--no::after {
-  transform: rotate(-45deg);
+.price-table__cell {
+  position: relative;
+  z-index: -1;
 }
+
 
 @media (min-width: $tablet-width) {
+  .price-table__cell {
+    position: relative;
+    z-index: -1;
+  }
+
   .price-table td,
   .price-table th {
     min-width: 155px;
@@ -168,7 +151,7 @@
 
   .price-table .price-table__hidden-cell {
     display: table-cell;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-right: 16px;
     padding-bottom: 7px;
     padding-left: 16px;
@@ -198,10 +181,25 @@
     width: auto;
   }
 
-  .price-table__check-icon--yes,
+  .price-table__check-icon--yes {
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    font-size: 0;
+    top: 11px;
+    left: 62px;
+    z-index: 1;
+  }
+
   .price-table__check-icon--no {
-    right: 41px;
-    bottom: 3px;
+    position: absolute;
+    top: 9px;
+    left: 64px;
+    font-size: 0;
+    width: 27px;
+    height: 26px;
+    fill: #f25b26;
+    z-index: 1;
   }
 }
 
@@ -243,12 +241,6 @@
     padding-bottom: 17px;
   }
 
-  .price-table__check-icon--yes,
-  .price-table__check-icon--no {
-    right: 81px;
-    bottom: 1px;
-  }
-
   .price-table__title--hit-logo::before {
     top: -27px;
     left: -42px;
@@ -270,5 +262,25 @@
 
   .price-table__check-icon--yes::before {
     top: 71%;
+  }
+
+  .price-table__rate-name {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .price-slider__slides {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .price-table__check-icon--yes {
+    top: 22px;
+    left: 101px;
+  }
+
+  .price-table__check-icon--no {
+    top: 17px;
+    left: 102px;
   }
 }
