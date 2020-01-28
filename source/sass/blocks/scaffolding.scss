@@ -20,23 +20,6 @@ body {
   overflow: hidden;
 }
 
-.btn {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 15px;
-  padding-right: 35px;
-  padding-left: 35px;
-  padding-bottom: 16px;
-  font-family: $open-sans;
-  line-height: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-
 // placeholder input email colors
 
 input[type="email"]::-webkit-input-placeholder {
@@ -102,18 +85,4 @@ textarea::-moz-placeholder {  /* Firefox 19+ */
 textarea:-ms-input-placeholder {
   color: #283645;
   opacity: 1;
-}
-
-@media (min-width: $tablet-width) {
-  .btn {
-    padding-right: 45px;
-    padding-left: 45px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .btn {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
 }

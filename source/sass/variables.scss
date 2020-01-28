@@ -4,6 +4,9 @@ $tablet-width: 660px;
 $desktop-width: 960px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+$tablet-width-only: 959px;
+$mobile-width-only: 659px;
+$mobile-tablet-width: 959px;
 
 // font weights
 
@@ -25,9 +28,22 @@ $site-list__link-font: $open-sans;
 $body__font-size: 18px;
 
 // colors
-$white-color: #ffffff;
-$ebony-clay-color: #283645;
 
+$ebony-clay-color: #283645;
+$color-black: #000000;
+$color-blue: #283645;
+$color-red: #d22856;
+$color-green: #2aab6d;
+$color-gray: #f2f2f2;
+$color-gray-dark: #efefef;
+$color-slider-down: #e9ebec;
+$color-white: #ffffff;
+$color-green-hover: #1c9b5e;
+$color-dark-blue: #1d2631;
+$color-gray-icon: #a9a9a9;
+$white-color: #ffffff;
+$color-icon-fill: #b5b9be;
+$color-slider-hover: #7e868f;
 
 // color scheme
 

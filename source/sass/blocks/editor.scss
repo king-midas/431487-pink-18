@@ -1,0 +1,317 @@
+.editor__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  width: 250px;
+}
+
+.editor__button {
+  display: block;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.editor__icon {
+  fill: $color-red;
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .editor__wrapper {
+    margin-bottom: 79px;
+  }
+
+  .editor__icon--mobile {
+    fill: $color-gray-icon;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .editor__icon--mobile .editor__icon-color-red {
+    fill: $color-icon-fill;
+  }
+}
+
+.editor__toggles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 29px;
+  width: 280px;
+  border-top: 1px solid $color-gray-dark;
+  background-color: $color-gray;
+}
+
+.editor__toggle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $color-red;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  border: 3px solid $color-red;
+  border-radius: 50px;
+  background-color: $color-gray;
+  margin-bottom: 13px;
+  padding: 15px;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+
+    background-color: $color-red;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.editor__toggle--cancel {
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    background: transparent;
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $color-blue;
+    opacity: 0.3;
+  }
+
+  .editor__tool--color {
+    padding-left: 0;
+    padding-right: 14px;
+  }
+}
+
+.editor__control {
+  display: none;
+  position: absolute;
+  top: 54px;
+  left: 0;
+}
+
+.editor__control--active {
+  display: block;
+}
+
+.editor__tool--balance {
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+.editor__tool--range-black {
+  display: block;
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin-top: 33px;
+  background-color: $color-black;
+}
+
+.editor__tool--circle {
+  display: block;
+  position: absolute;
+  top: 27px;
+  height: 7px;
+  padding: 5px;
+  border: 2px solid $color-red;
+  border-radius: 50%;
+  background-color: $color-gray;
+  cursor: pointer;
+
+  &:active {
+    background-color: $color-red;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .editor__tool--circle {
+    right: 29px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .editor__toggle {
+    margin-bottom: 26px;
+  }
+
+  .editor__toggles {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .editor__tool--cut,
+  .editor__tool--color,
+  .editor__tool--balance {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 50px;
+    margin-bottom: 21px;
+    padding-left: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 20px;
+      width: 275px;
+      height: 2px;
+      background-color: $color-gray-dark;
+    }
+  }
+
+  .editor__control {
+    display: block;
+    top: 20px;
+    left: 53px;
+  }
+
+  .editor__tool-mobibe {
+    display: none;
+  }
+
+  .editor__tool--cut svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .editor__tool--color svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .editor__tool--balance svg {
+    width: 18px;
+    height: 18px;
+    margin-top: 0;
+    margin-left: 7px;
+  }
+
+  .editor__tool--balance .editor__tool--circle {
+    left: 97px;
+  }
+
+  .editor__tool--color .editor__tool--circle {
+    left: 27px;
+  }
+
+  .editor__tool--range-black {
+    width: 202px;
+    margin: 0;
+  }
+
+  .editor__tool--circle {
+    top: -7px;
+    left: 146px;
+  }
+
+  .editor__wrapper {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+
+  .editor__button {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .editor__toggle {
+    width: 180px;
+  }
+
+  .editor__toggles {
+    width: 410px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 121px;
+    padding: 0;
+    padding-left: 16px;
+    border: none;
+  }
+
+  .editor__control {
+    top: 22px;
+    left: 106px;
+  }
+
+  .editor__button {
+    margin: 0;
+    padding: 0;
+  }
+
+  .editor__wrapper {
+    justify-content: flex-start;
+  }
+
+  .editor__wrapper svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .editor__tool {
+    margin-right: 15px;
+  }
+
+  .editor__tool--range-black {
+    width: 290px;
+  }
+
+  .editor__tool--circle {
+    top: -6px;
+    left: 70px;
+  }
+
+  .editor__tool--cut,
+  .editor__tool--color,
+  .editor__tool--balance {
+    justify-content: space-between;
+    width: 410px;
+    margin-bottom: 23px;
+    padding-left: 14px;
+
+    &::after {
+      width: 400px;
+    }
+  }
+
+  .editor__tool--balance svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .editor__tool--color .editor__tool--circle {
+    left: 246px;
+  }
+
+  .editor__tool--balance .editor__tool--circle {
+    left: 159px;
+  }
+}
