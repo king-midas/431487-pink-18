@@ -33,4 +33,5 @@ showButton.addEventListener("click", function(evt){
   crossPic.classList.toggle("main-nav__icon-cross--hide");
   burgerPic.classList.toggle("main-nav__icon-burger--hide");
   pageHeader.classList.toggle("page-header--full");
+  showButton.classList.toggle("main-nav__toggle--short");
 });

@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.main-nav__toggle--short {
+  right: 7px;
+}
+
 .main-nav__toggle--show {
   display: block;
 }
@@ -85,6 +89,10 @@
   .main-nav__toggle {
     top: 46px;
     right: 18px;
+  }
+
+  .main-nav__toggle--short {
+    right: 7px;
   }
 }
 
